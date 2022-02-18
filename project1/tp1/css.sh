@@ -2,5 +2,5 @@
 
 
 for FILE in "monrep"/*; do
-    python beautifulsoup.py *FILE
+    python3 beautifulsoup.py $FILE
 done
