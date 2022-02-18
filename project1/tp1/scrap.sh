@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+
+##################################
+#	Abdoul Sadikou 20158628      #
+#								 #
+#  	Marguerite Camara 20143122   #
+##################################
+
 set -e
 
 # URL de l'index des tests (trouvée en regardant la source de n'importe quel test...)
