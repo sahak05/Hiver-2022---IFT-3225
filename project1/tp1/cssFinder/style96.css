@@ -1,0 +1,9 @@
+p {
+  background-color: red;
+}
+
+p[title*=bar] {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style96.css.map */

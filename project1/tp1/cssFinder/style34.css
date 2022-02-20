@@ -1,0 +1,9 @@
+a:not(:focus) {
+  background-color: transparent;
+}
+
+a {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style34.css.map */

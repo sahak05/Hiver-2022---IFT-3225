@@ -1,0 +1,9 @@
+p:not(:root) {
+  background-color: lime;
+}
+
+div * {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style43.css.map */

@@ -1,0 +1,10 @@
+div.stub * {
+  color: lime;
+  text-decoration: none;
+}
+
+div.stub > * > *:not(:hover) {
+  color: black;
+}
+
+/*# sourceMappingURL=style32.css.map */

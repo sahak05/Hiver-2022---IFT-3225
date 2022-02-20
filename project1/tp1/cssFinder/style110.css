@@ -1,0 +1,9 @@
+p.test a {
+  background-color: red;
+}
+
+p.test *:visited {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style110.css.map */

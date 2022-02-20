@@ -1,0 +1,17 @@
+p {
+  color: green;
+}
+
+p:first-line {
+  background: red;
+  color: yellow;
+  font-size: 4em;
+}
+
+p::first-line {
+  background: red;
+  color: yellow;
+  font-size: 4em;
+}
+
+/*# sourceMappingURL=style125.css.map */

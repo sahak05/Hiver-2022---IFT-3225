@@ -1,0 +1,9 @@
+p {
+  background-color: lime;
+}
+
+p:not(:not(p)) {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style67.css.map */

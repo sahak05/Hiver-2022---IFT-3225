@@ -1,0 +1,9 @@
+.green {
+  background-color: lime !important;
+}
+
+div.stub > p ~ p {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style21.css.map */

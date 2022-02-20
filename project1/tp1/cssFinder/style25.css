@@ -1,0 +1,9 @@
+div.stub > * {
+  color: red;
+}
+
+div.stub *:not([title$=tait]) {
+  color: lime;
+}
+
+/*# sourceMappingURL=style25.css.map */

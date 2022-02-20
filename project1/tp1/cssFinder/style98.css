@@ -1,0 +1,9 @@
+p.test a {
+  background-color: red;
+}
+
+p.test *:link {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style98.css.map */

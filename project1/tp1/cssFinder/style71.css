@@ -1,0 +1,9 @@
+p {
+  color: green !important;
+}
+
+blockquote + div ~ p {
+  color: red;
+}
+
+/*# sourceMappingURL=style71.css.map */

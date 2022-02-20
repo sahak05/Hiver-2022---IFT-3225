@@ -1,0 +1,9 @@
+.green {
+  background-color: lime !important;
+}
+
+.t1 *:not(:only-of-type) {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style66.css.map */

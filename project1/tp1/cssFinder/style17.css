@@ -1,0 +1,9 @@
+.red {
+  background-color: red;
+}
+
+div.stub > p + p {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style17.css.map */

@@ -1,0 +1,13 @@
+.red {
+  background-color: red;
+}
+
+.t1 td:last-child {
+  background-color: lime;
+}
+
+p > *:last-child {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style164.css.map */

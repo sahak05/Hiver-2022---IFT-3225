@@ -1,0 +1,9 @@
+p {
+  background-color: red;
+}
+
+p[title] {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style22.css.map */

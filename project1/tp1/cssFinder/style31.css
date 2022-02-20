@@ -1,0 +1,9 @@
+div.stub > * {
+  background-color: red;
+}
+
+div.stub *:not(:visited) {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style31.css.map */

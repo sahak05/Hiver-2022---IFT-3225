@@ -1,0 +1,9 @@
+ul > li {
+  background-color: red;
+}
+
+li:lang(en-GB) {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style148.css.map */

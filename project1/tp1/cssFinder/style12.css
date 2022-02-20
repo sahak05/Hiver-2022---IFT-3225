@@ -1,0 +1,13 @@
+.white {
+  background-color: transparent !important;
+}
+
+.red {
+  background-color: red;
+}
+
+div > p.test {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style12.css.map */

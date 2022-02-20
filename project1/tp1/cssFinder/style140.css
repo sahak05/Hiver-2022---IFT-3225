@@ -1,0 +1,9 @@
+p {
+  background: lime;
+}
+
+p:empty {
+  background: red;
+}
+
+/*# sourceMappingURL=style140.css.map */

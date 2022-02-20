@@ -1,0 +1,10 @@
+div {
+  color: green;
+}
+
+p::first-child {
+  color: yellow;
+  background: red;
+}
+
+/*# sourceMappingURL=style122.css.map */

@@ -1,0 +1,9 @@
+p {
+  color: red;
+}
+
+blockquote > div p {
+  color: green;
+}
+
+/*# sourceMappingURL=style69.css.map */

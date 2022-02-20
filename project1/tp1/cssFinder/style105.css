@@ -1,0 +1,11 @@
+span:before {
+  background-color: red;
+  content: "FAILED";
+}
+
+span::before {
+  background-color: lime;
+  content: "PASSED";
+}
+
+/*# sourceMappingURL=style105.css.map */

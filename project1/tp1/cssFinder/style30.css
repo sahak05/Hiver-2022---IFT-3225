@@ -1,0 +1,9 @@
+div.stub > * {
+  background-color: red;
+}
+
+div.stub *:not(:link) {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style30.css.map */

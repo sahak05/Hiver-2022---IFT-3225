@@ -1,0 +1,11 @@
+#test {
+  background: red;
+  display: block;
+  padding: 1em;
+}
+
+#stub ~ div div + div > div {
+  background: lime;
+}
+
+/*# sourceMappingURL=style81.css.map */

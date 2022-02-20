@@ -1,0 +1,9 @@
+div.stub > * {
+  color: red;
+}
+
+div.stub *:not(#foo) {
+  color: lime;
+}
+
+/*# sourceMappingURL=style29.css.map */

@@ -1,0 +1,17 @@
+button {
+  background-color: red;
+}
+
+input {
+  background-color: red;
+}
+
+button:disabled {
+  background-color: lime;
+}
+
+input:disabled {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style150.css.map */

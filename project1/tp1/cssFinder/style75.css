@@ -1,0 +1,9 @@
+p {
+  background-color: red;
+}
+
+p[title^=foo] {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style75.css.map */

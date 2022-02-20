@@ -1,0 +1,9 @@
+p {
+  color: lime;
+}
+
+p[class*=""] {
+  color: red;
+}
+
+/*# sourceMappingURL=style133.css.map */

@@ -1,0 +1,9 @@
+p:first-line {
+  background-color: red;
+}
+
+p::first-line {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style103.css.map */

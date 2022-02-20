@@ -1,0 +1,9 @@
+p {
+  color: red;
+}
+
+p:not([class^=""]) {
+  color: lime;
+}
+
+/*# sourceMappingURL=style135.css.map */
