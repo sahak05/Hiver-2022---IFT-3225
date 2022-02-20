@@ -23,5 +23,17 @@ fi
 # Creation du dossier
 mkdir -p $1
 
+
 # Scrapping
-wget --recursive -l 1 --no-host-directories --directory-prefix=$1 --no-parent robots=off -nd --reject "index.html*" --reject "robots.txt*" $URL
+wget --recursive -l 1 --no-host-directories --directory-prefix=$1 --no-parent robots=off -nd --reject "index.html*" --reject "robots.txt*" $URL | echo continue
+
+
+j=1
+cd $1
+for i in *html
+do
+	mv $i "3-modsel-$j.html"
+	#rm $i
+	((j+=1))
+done
+rm robots.txt.tmp #error handle

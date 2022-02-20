@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <style>
+   div:hover > p:first-child { background-color : lime }
+  </style>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution67.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution69.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container" id="here">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">div:hover &gt; p:first-child { background-color : lime }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+ &lt;div&gt;
+  &lt;p&gt;The background color of this paragraph should turn to green when the mouse pointer hovers over any of the following:&lt;br&gt;&lt;strong&gt;This text.&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;This text.&lt;/p&gt;
+  &lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;dl&gt;&lt;dt&gt;This text.&lt;/dt&gt;&lt;dd&gt;This text.&lt;/dd&gt;&lt;/dl&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;This text.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;p&gt;&lt;sub&gt;This text.&lt;/sub&gt;&lt;/p&gt;
+  &lt;p&gt;...and anything else between the top of the first paragraph and the bottom of this paragraph.&lt;/p&gt;
+ &lt;/div&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <div class="solution" id="1">
+      <div class="testText">
+       <div>
+        <p>
+         The background color of this paragraph should turn to green when the mouse pointer hovers over any of the following:
+         <br/>
+         <strong>
+          This text.
+         </strong>
+        </p>
+        <p>
+         This text.
+        </p>
+        <table>
+         <tr>
+          <td>
+           <table>
+            <tr>
+             <td>
+              <dl>
+               <dt>
+                This text.
+               </dt>
+               <dd>
+                This text.
+               </dd>
+              </dl>
+             </td>
+            </tr>
+           </table>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           This text.
+          </td>
+         </tr>
+        </table>
+        <p>
+         <sub>
+          This text.
+         </sub>
+        </p>
+        <p>
+         ...and anything else between the top of the first paragraph and the bottom of this paragraph.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>

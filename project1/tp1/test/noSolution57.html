@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution56.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution58.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">p:hover { background-color : lime }
+a:hover { background-color : lime }
+
+tr:hover { background-color : green }
+td:hover { background-color : lime }
+
+table { border-spacing: 5px; }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+&lt;p&gt;bat/&lt;
+&gt;ydobt/&lt; 
+&gt;rt/&lt;  
+&gt;dt/&lt;.)sllec knalb(&gt;dt&lt;   
+&gt;dt/&lt;&gt;dt&lt;   
+&gt;dt/&lt;:&gt;gnorts/&lt;ereh&gt;gnorts&lt; dnA&gt;dt&lt;   
+&gt;rt&lt;  
+&lt;strong&gt;&gt;-- &lt;/strong&gt;s llec tub ,neerg og llits dluoh&lt;strong&gt;set &lt;/strong&gt;k&lt;/p&gt;t&lt;address&gt;t evomer --!&lt; &gt;dt/&lt;&gt;dt&lt; &lt;a href="#foo"&gt;s/&lt;ereht&gt;gnor&lt;strong&gt;c&gt;dt&lt;/strong&gt;&lt;&lt;/a&gt;revo si&gt;dt&lt;   
+&gt;rt&lt;  
+&gt;rt/&lt;  
+&gt;dt/&lt;ecived gnitniop&gt;dt&lt;   
+&gt;dt/&lt;/address&gt;d&lt;table&gt;dt&lt;tbody&gt; kr&lt;tr&gt;t&lt;  &lt;td&gt;t&lt;  
+&gt;rt/&lt;  &lt;/td&gt;&lt;og &lt;td&gt;hs&gt;dt&lt;   
+&lt;/td&gt;elba&lt;td&gt;ht&gt;dt&lt;   &lt;/td&gt;&lt;ni&lt;/tr&gt; eh&lt;tr&gt;&lt;   &lt;td&gt;&lt;  
+&gt;rt/&lt; &lt;/td&gt;/&lt;&gt;d&lt;td&gt; 
+&gt;dt/&lt;.)&lt;/td&gt;ts/&lt;&lt;td&gt;&gt;gnorts&lt;( me&lt;/td&gt;&lt;  &lt;/tr&gt;/&lt;r&lt;tr&gt;eciv&lt;td&gt;t&lt;   
+&gt;rt&lt; &lt;/td&gt;/&lt;  &lt;td&gt;/&lt;gnit&lt;strong&gt;&gt;dt&lt;&lt;/strong&gt;re&lt;/td&gt;oy&gt;d&lt;td&gt;&lt;/td&gt;/&lt;n&lt;/tr&gt;eer&lt;tr&gt;&lt;   &lt;td&gt;&lt;  
+&gt;rt/&lt;  &lt;/td&gt;&lt;og &lt;td&gt;hs&gt;dt&lt;   
+&lt;/td&gt;elba&lt;td&gt;ht&gt;dt&lt;   &lt;/td&gt;&lt;ni&lt;/tr&gt;c e&lt;tr&gt;t&lt;  &lt;td&gt;t&lt;  
+&gt;ydob&lt;/td&gt;elba&lt;td&gt;sserdda/&lt;/td&gt;revo&lt;td&gt;voh ecived gnit&lt;/td&gt;eht&lt;/tr&gt; ne&lt;tr&gt;ot n&lt;td&gt;dluohs &gt;a/&lt;&lt;/td&gt;rts/&lt;td&gt;h&gt;gnor&lt;strong&gt;cna s&lt;/strong&gt;"&lt;/td&gt; a&lt; &lt;td&gt;&lt;/td&gt;d&lt;!-- remove this cell to make an evil test; row should still go green, but cell should not --&gt;&gt;gn&lt;/tr&gt;( t&lt;tr&gt;sti &lt;td&gt;ie s&lt;strong&gt;tnio&lt;/strong&gt;h&lt;/td&gt;nehw&lt;td&gt;&lt;/td&gt; nru&lt;td&gt;uohs hpargarap&lt;/td&gt; fo&lt;/tr&gt;c &lt;/tbody&gt;a&lt;/table&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <a class="btn btn-danger" href="Solution57.html" id="solution1" role="button">
+      Solution
+     </a>
+     <div class="solution">
+      <div class="testText">
+       /
+       <p>
+        rt/&lt;
+&gt;dt/&lt;.)sllec knalb(&gt;dt&lt;
+&gt;dt/&lt;&gt;dt&lt;
+&gt;dt/&lt;:&gt;gnorts/
+        <ereh>
+         gnorts&lt; dnA&gt;dt&lt;
+&gt;rt&lt;
+&gt;rt/&lt;
+&gt;-- ton dluohs llec tub
+         <strong>
+          g ll
+         </strong>
+         s wor ;tset live na ekam ot llec
+         <strong>
+          omer
+         </strong>
+         /
+        </ereh>
+       </p>
+       &lt;
+       <address>
+        norts/
+        <ereht>
+         gnorts&lt; sll
+         <a href="#foo">
+          revo si&gt;dt&lt;
+          <strong>
+           /&lt;
+&gt;
+          </strong>
+          d
+         </a>
+         tniop&gt;dt&lt;
+&gt;dt/
+         <eht nehw="">
+          dt&lt;
+&gt;dt/
+          <neerg krad="">
+           dt&lt;
+&gt;rt&lt;
+&gt;rt/&lt;
+&gt;dt
+          </neerg>
+         </eht>
+        </ereht>
+       </address>
+       s
+       <table>
+        t
+        <tbody>
+         <tr>
+          &gt;
+          <td>
+           &gt;dt/
+           <ni swor<="" td="">
+            d
+            <td>
+             rt&lt;
+&gt;rt/&lt;
+            </td>
+            &gt;
+            <td>
+             &gt;dt/&lt;.)&gt;g
+            </td>
+            /
+           </ni>
+          </td>
+         </tr>
+         &gt;
+         <tr>
+          t
+          <td>
+           meht&gt;dt&lt;
+&gt;
+          </td>
+          e
+          <td>
+           cived&gt;dt&lt;
+          </td>
+          <td>
+           &lt;
+&gt;dt/
+           <gnitn< td="">
+            h
+           </gnitn<>
+          </td>
+         </tr>
+         <tr>
+          &lt;
+          <td>
+           h uoy&gt;dt&lt;
+&gt;
+          </td>
+          e
+          <td>
+           eerg&gt;d
+           <strong>
+            &gt;rt/
+           </strong>
+           d
+          </td>
+          &gt;
+          <td>
+          </td>
+          e
+         </tr>
+         s
+         <tr>
+          d
+          <td>
+           dt/
+           <ni slle<="" td="">
+            &gt;
+            <td>
+             &gt;rt&lt;
+&gt;ydob
+            </td>
+            l
+            <td>
+             &gt;sserdda
+            </td>
+           </ni>
+          </td>
+         </tr>
+         s
+         <tr>
+          h
+          <td>
+           ved gnitni
+          </td>
+          t
+          <td>
+           w neerg
+          </td>
+          u
+          <td>
+           uohs &gt;a/&lt;)&gt;gnor
+          </td>
+          r
+         </tr>
+         o
+         <tr>
+          (
+          <td>
+           cna siht&gt;"o
+          </td>
+          f
+          <td>
+           a&lt; fo
+           <strong>
+            uorgk
+           </strong>
+           s
+          </td>
+          &lt;
+          <td>
+          </td>
+          o
+          <!-- remove this cell to make an evil test; row should still go green, but cell should not -->
+         </tr>
+         o
+         <tr>
+          u
+          <td>
+           ht
+           <strong>
+            eerg
+           </strong>
+           d
+          </td>
+          <td>
+          </td>
+          <td>
+           fo roloc dnuo
+          </td>
+          b
+         </tr>
+         p
+        </tbody>
+        t
+       </table>
+       l
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>

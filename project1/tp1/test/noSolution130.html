@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution129.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution131.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">p { background-color: navy; color: white; }
+p:not(:target) { background-color: white; color: black; }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+&lt;p id="first"&gt;gnieb ot nruter lla dluohs       
+shpargarap eerht eht ,&gt;a/&lt;knil siht&gt;"gnissim#"=ferh a&lt;       
+wollof uoy nehW .evoba knil eh&lt;a href="#second"&gt;eulb emoc&lt;/a&gt;l&lt;/p&gt; &lt;p id="second"&gt;tsnu eb yllaitini dluohs hpargarap sihT&gt;"driht"=di p&lt;
+&gt;p/&lt;.eulb emoceb dluohs woleb hpargarap eht fo dnuorgkcab       
+ eht dna d&lt;a href="#third"&gt;nruter dl&lt;/a&gt; ti ,&gt;a/&lt;knil siht&gt;"driht#"=ferh a&lt;       
+tceles uoy nehW .evoba knil eht tceles uoy nehw eulb emoceb dlu&lt;/p&gt;t&lt;p id="third"&gt;tsnu eb yllaitini dluohs hpargarap sihT&gt;"dnoces"=di p&lt;
+&gt;p/&lt;.&gt;a/&lt;knil siht&gt;"dnoces#"=ferh a&lt; wollof uoy       
+nehw eulb emoceb dl&lt;a href="#missing"&gt;ollof eht&lt;/a&gt;dnuorgkcab ehT       
+.delytsnu eb dluohs hpargarap sihT&gt;"tsrif"=d&lt;/p&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <a class="btn btn-danger" href="Solution130.html" id="solution1" role="button">
+      Solution
+     </a>
+     <div class="solution">
+      <div class="testText">
+       n
+       <p id="first">
+        lla dluohs       
+shpargarap eerht eht ,&gt;a/
+        <knil siht="">
+         "gnissim#"=ferh a&lt;       
+wollof uoy nehW .evoba knil eht tceles uoy neh
+         <a href="#second">
+          hs tI
+         </a>
+         .
+        </knil>
+       </p>
+       t
+       <p id="second">
+        i dluohs hpargarap sihT&gt;"driht"=di p&lt;
+&gt;p/&lt;.eulb emoceb dluohs woleb hpargarap eht fo dnuorgkcab       
+ eht dna delytsnu gnieb ot
+        <a href="#third">
+         ,&gt;a/
+         <kni< a="">
+          ht&gt;"driht#"=ferh a&lt;       
+tceles uoy nehW .evoba knil eht tceles uoy nehw eulb emoceb dluohs tI       
+.d
+         </kni<>
+        </a>
+       </p>
+       s
+       <p id="third">
+        i dluohs hpargarap sihT&gt;"dnoces"=di p&lt;
+&gt;p/&lt;.&gt;a/
+        <knil siht="">
+         "dnoces#"=ferh a&lt; wollof uoy       
+nehw eulb emoceb dluohs hpargarap g
+         <a href="#missing">
+          orgkcab e
+         </a>
+         .delytsnu eb dluohs hpargarap sihT&gt;"tsrif"=di p&lt;
+&gt;"txeTtset"
+        </knil>
+       </p>
+       l
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution84.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution86.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">.green { background-color : lime ! important }
+ul &gt; li:nth-child(odd) { background-color : red }
+ol &gt; li:nth-child(even) { background-color : red }
+table.t1 tr:nth-child(-n+4) { background-color : red }
+table.t2 td:nth-child(3n+1) { background-color : red }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+&lt;ul&gt;/&lt;
+&lt;li class="green"&gt;/&lt;8.3&gt;dt&lt;
+&gt;dt/&lt;llec neerg&gt;"neerg"=ssalc dt&lt;      
+&gt;&lt;/li&gt;.3&gt;&lt;li&gt;&gt;dt/&lt;5.3&gt;dt&lt;
+&gt;dt&lt;/li&gt;c n&lt;li class="green"&gt; dt&lt;      
+&gt;dt/&lt;3.3&gt;dt&lt;
+&gt;dt/&lt;2.3&gt;dt&lt;
+&gt;dt/&lt;llec neer&lt;/li&gt;erg&lt;li&gt;alc dt&lt;
+&gt;rt&lt;  
+&gt;&lt;/li&gt;&gt;dt&lt;li class="green"&gt;c neerg&gt;"neerg"=ssalc dt&lt;      
+&gt;dt/&lt;6.2&gt;dt&lt;
+&gt;dt/&lt;5&lt;/li&gt;&lt;
+&gt;&lt;li&gt;llec neerg&gt;"nee&lt;/li&gt;s&lt;/ul&gt;t&lt;ol&gt;   &lt;li&gt;/&lt;3.2&gt;dt&lt;
+&gt;dt/&lt;&lt;/li&gt;t&lt;
+&lt;li class="green"&gt;eerg"=ssalc dt&lt;
+&gt;rt&lt;  
+&gt;rt/&lt;
+&gt;dt/&lt;8.1&gt;dt&lt;
+&gt;dt/&lt;llec &lt;/li&gt;&gt;"n&lt;li&gt;"=ssalc dt&lt;    &lt;/li&gt;t/&lt;&lt;li class="green"&gt;t&lt;
+&gt;dt/&lt;llec neerg&gt;"neerg"=ssalc dt&lt;      
+&gt;dt/&lt;3.1&gt;&lt;/li&gt;dt/&lt;li&gt;&gt;dt&lt;
+&gt;dt/&lt;llec &lt;/li&gt;&gt;"n&lt;li class="green"&gt;t&lt;  
+&gt;"1"=redrob "2t"=ssalc elbat&lt;
+&gt;p/&lt;&gt;p&lt;
+&gt;elbat/&lt;&lt;/li&gt;&lt;&lt;/ol&gt;&lt;&lt;div&gt;t&lt;table border="1" class="t1"&gt;rt&lt;&lt;tr class="green"&gt;d&lt;td&gt;dt/&lt;2.5&gt;dt&lt;
+&gt;dt&lt;/td&gt;&gt;&lt;td&gt;&gt;rt&lt;/td&gt;rt/&lt;
+&gt;&lt;td&gt;3.4&lt;/td&gt; &lt;/tr&gt;&gt;dt&lt;tr class="green"&gt; &lt;td&gt;r neerG&gt;dt&lt;
+&gt;"n&lt;/td&gt;=&lt;td&gt;c r&lt;/td&gt;&gt;rt/&lt;
+&lt;td&gt;&lt;3.&lt;/td&gt; &lt;/tr&gt;&gt;dt&lt;tr class="green"&gt; &lt;td&gt;r neerG&gt;dt&lt;
+&gt;"n&lt;/td&gt;=&lt;td&gt;c r&lt;/td&gt;&gt;rt/&lt;
+&lt;td&gt;&lt;3.&lt;/td&gt; &lt;/tr&gt;&gt;dt&lt;tr class="green"&gt; &lt;td&gt;r neerG&gt;dt&lt;
+&gt;"n&lt;/td&gt;=&lt;td&gt;c r&lt;/td&gt;&gt;rt/&lt;
+&gt;&lt;td&gt;3.1&lt;/td&gt; &lt;/tr&gt;dt/&lt;tr&gt;&gt;&lt;td&gt;&gt;dt&lt;/td&gt; &lt;td&gt;r n&lt;/td&gt;d&lt;td&gt;"ne&lt;/td&gt;s&lt;/tr&gt;rt&lt;&lt;tr&gt;"&lt;td&gt;ssa&lt;/td&gt;"&lt;td&gt;rob&lt;/td&gt;t&lt;td&gt;id&lt;&lt;/td&gt;&lt;&lt;/tr&gt;&lt;&lt;/table&gt;a&lt;p&gt;&lt;/p&gt; &lt;table class="t2" border="1"&gt; si&lt;tr&gt;n&lt;td class="green"&gt;&gt;il/&lt;meti &lt;/td&gt;h&lt;td&gt;&gt;il&lt;/td&gt;i&lt;td&gt;nuo&lt;/td&gt;b neerg&lt;td class="green"&gt;i tsil htr&lt;/td&gt;i&lt;td&gt;nee&lt;/td&gt;s&lt;td&gt;il&lt;&lt;/td&gt;l/&lt;meti&lt;td class="green"&gt;&gt;il/&lt;dnuor&lt;/td&gt; &lt;td&gt;g a&lt;/td&gt; &lt;/tr&gt;s m&lt;tr&gt;t&lt;td class="green"&gt;eerg"=ssal&lt;/td&gt; &lt;td&gt;l/&lt;&lt;/td&gt;t&lt;td&gt;tsr&lt;/td&gt;&lt;  
+&gt;lo&lt;td class="green"&gt;tsil htxiS&lt;/td&gt; &lt;td&gt;/&lt;d&lt;/td&gt;k&lt;td&gt;nee&lt;/td&gt;evah dl&lt;td class="green"&gt;if sihT&gt;"n&lt;/td&gt;=&lt;td&gt;c i&lt;/td&gt;&gt;&lt;/tr&gt;eti&lt;tr&gt;l&lt;td class="green"&gt;&lt;dnuorgkca&lt;/td&gt;r&lt;td&gt;eva&lt;/td&gt;o&lt;td&gt;eti&lt;/td&gt; driht &lt;td class="green"&gt; il&lt;  
+&gt;il&lt;/td&gt;i&lt;td&gt;l d&lt;/td&gt;&gt;&lt;td&gt; 
+&gt;&lt;/td&gt;nuorgkc&lt;td class="green"&gt;uohs meti &lt;/td&gt;t&lt;td&gt; si&lt;/td&gt;e&lt;/tr&gt;s&lt;/table&gt; &lt;/div&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <a class="btn btn-danger" href="Solution85.html" id="solution1" role="button">
+      Solution
+     </a>
+     <div class="solution">
+      <div class="testText">
+       <ul>
+        &lt;
+        <li class="green">
+         <llec neerg="">
+          "neerg"=ssalc dt&lt;
+&gt;dt/&lt;6.3&gt;dt&lt;
+&gt;dt/&lt;5.3
+         </llec>
+        </li>
+        &gt;
+        <li>
+         llec neerg&gt;"neer
+        </li>
+        a
+        <li class="green">
+         &lt;
+&gt;dt/&lt;2.3&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "neerg"=ssalc dt&lt;
+&gt;r
+         </llec>
+        </li>
+        t
+        <li>
+         dt/&lt;8.2&gt;dt&lt;
+&gt;dt/
+        </li>
+        <li class="green">
+         c dt&lt;
+&gt;dt/&lt;6.2&gt;dt&lt;
+&gt;dt/&lt;5.2&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "ne
+         </llec>
+        </li>
+        s
+        <li>
+         dt&lt;
+&gt;dt/&lt;3.2&gt;d
+        </li>
+        t
+       </ul>
+       &gt;
+       <ol>
+        &gt;
+        <li>
+         llec neerg&gt;"nee
+        </li>
+        s
+        <li class="green">
+         &gt;dt/&lt;8.1&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "neerg"=ssalc dt&lt;
+&gt;dt/
+         </llec>
+        </li>
+        d
+        <li>
+         dt/&lt;5.1&gt;dt&lt;
+&gt;dt
+        </li>
+        c
+        <li class="green">
+         lc dt&lt;
+&gt;dt/&lt;3.1&gt;dt&lt;
+&gt;dt/&lt;2.1&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "ne
+         </llec>
+        </li>
+        s
+        <li>
+         dt&lt;
+&gt;rt&lt;
+&gt;"2t"
+        </li>
+        c
+        <li class="green">
+         &gt;p/&lt;&gt;p&lt;
+&gt;elbat/&lt;
+&gt;rt/&lt;
+&gt;dt/&lt;3.6&gt;dt&lt;
+&gt;dt/&lt;2.6&gt;dt&lt;
+&gt;
+        </li>
+        .
+       </ol>
+       <div>
+        &gt;
+        <table border="1" class="t1">
+         &lt;
+         <tr class="green">
+          <td>
+           &lt;
+&gt;dt/&lt;3.4&gt;dt&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+          <td>
+           wo
+          </td>
+          r
+         </tr>
+         <tr class="green">
+          <td>
+           &lt;
+&gt;dt/&lt;3.3&gt;dt&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+          <td>
+           wo
+          </td>
+          r
+         </tr>
+         <tr class="green">
+          <td>
+           &lt;
+&gt;dt/&lt;3.2&gt;dt&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+          <td>
+           wo
+          </td>
+          r
+         </tr>
+         <tr class="green">
+          <td>
+           &lt;
+&gt;dt/&lt;3.1&gt;dt&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+          <td>
+           wo
+          </td>
+          r
+         </tr>
+         <tr>
+          e
+          <td>
+           ssa
+          </td>
+          &lt;
+          <td>
+           t"=
+          </td>
+          <td>
+           red
+          </td>
+          l
+         </tr>
+         &gt;
+         <tr>
+          <td>
+           &lt;
+&gt;
+          </td>
+          n
+          <td>
+           kca
+          </td>
+          r
+          <td>
+           eva
+          </td>
+          o
+         </tr>
+         t
+        </table>
+        t
+        <p>
+        </p>
+        T
+        <table border="1" class="t2">
+         t
+         <tr>
+          h
+          <td class="green">
+           rgkcab nee
+          </td>
+          e
+          <td>
+           dlu
+          </td>
+          e
+          <td>
+           sil
+          </td>
+          o
+          <td class="green">
+           lc il&lt;
+&gt;il
+          </td>
+          i
+          <td>
+           l d
+          </td>
+          i
+          <td>
+           il/
+          </td>
+          r
+          <td class="green">
+           dluohs me
+          </td>
+          i
+          <td>
+           oce
+          </td>
+          T
+         </tr>
+         r
+         <tr>
+          s
+          <td class="green">
+           tsil tsriF
+          </td>
+          &gt;
+          <td>
+           &gt;lu
+          </td>
+          l
+          <td>
+           ti
+          </td>
+          h
+          <td class="green">
+           rgkcab nee
+          </td>
+          e
+          <td>
+           dlu
+          </td>
+          e
+          <td>
+           sil
+          </td>
+          f
+          <td class="green">
+           c il&lt;
+&gt;il/
+          </td>
+          <td>
+           ht
+          </td>
+          i
+         </tr>
+         l
+         <tr>
+          u
+          <td class="green">
+           ah dluohs
+          </td>
+          t
+          <td>
+           dri
+          </td>
+          h
+          <td>
+           eer
+          </td>
+          a
+          <td class="green">
+           sil dnoceS
+          </td>
+          &gt;
+          <td>
+           dnu
+          </td>
+          a
+          <td>
+           erg
+          </td>
+          a
+          <td class="green">
+           tsrif sih
+          </td>
+          e
+          <td>
+           ssa
+          </td>
+          &lt;
+         </tr>
+        </table>
+        e
+       </div>
+       l
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>

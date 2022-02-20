@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+  <style>
+   p { background-color: navy; color: white; }
+p:not(:target) { background-color: white; color: black; }
+  </style>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution129.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution131.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container" id="here">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">p { background-color: navy; color: white; }
+p:not(:target) { background-color: white; color: black; }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+&lt;p id="first"&gt;This paragraph should be unstyled.
+       The background of the following paragraph should become blue when
+       you follow &lt;a href="#second"&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p id="second"&gt;This paragraph should initially be unstyled.
+       It should become blue when you select the link above. When you select
+       &lt;a href="#third"&gt;this link&lt;/a&gt;, it should return to being unstyled and the 
+       background of the paragraph below should become blue.&lt;/p&gt;
+&lt;p id="third"&gt;This paragraph should initially be unstyled.
+       It should become blue when you select the link above. When you follow
+       &lt;a href="#missing"&gt;this link&lt;/a&gt;, the three paragraphs
+       should all return to being unstyled.&lt;/p&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <div class="solution" id="1">
+      <div class="testText">
+       <p id="first">
+        This paragraph should be unstyled.
+       The background of the following paragraph should become blue when
+       you follow
+        <a href="#second">
+         this link
+        </a>
+        .
+       </p>
+       <p id="second">
+        This paragraph should initially be unstyled.
+       It should become blue when you select the link above. When you select
+        <a href="#third">
+         this link
+        </a>
+        , it should return to being unstyled and the 
+       background of the paragraph below should become blue.
+       </p>
+       <p id="third">
+        This paragraph should initially be unstyled.
+       It should become blue when you select the link above. When you follow
+        <a href="#missing">
+         this link
+        </a>
+        , the three paragraphs
+       should all return to being unstyled.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>

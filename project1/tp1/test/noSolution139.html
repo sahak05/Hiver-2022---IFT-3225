@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>
+   Projet 1 IFT3225 Abdoul_Marguerite
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
+ </head>
+ <body>
+  <div class="jumbotron mb-5">
+   <div class="text-center text.light bg-secondary pt-4 pb-2 mt-4">
+    <h1>
+     IFT3225 — Projet 1
+    </h1>
+    <h1>
+     Shell/CSS/HTML5/Bootstrap pour le scraping de pages HTML de tests CSS de W3C
+    </h1>
+   </div>
+  </div>
+  <div>
+   <p class="display-3 p-3">
+    Lisez le CSS et la structure HTML du test ci-dessous, devinez ce que cela produit. Cliquez sur le bouton
+    <b>
+     Solution
+    </b>
+    pour verifier votre reponse.
+   </p>
+  </div>
+  <div class="m-2">
+   <a class="btn btn-secondary mx-5" href="noSolution138.html" id="prev" role="button">
+    Previous
+   </a>
+   <a class="btn btn-secondary mx-5" href="noSolution140.html" id="next" role="button">
+    Next..
+   </a>
+  </div>
+  <div class="container">
+   <div class="row">
+    <div class="col-4 border">
+     <h3>
+      CSS
+     </h3>
+     <pre class="forCss">.red { background-color : red }
+ul &gt; li:not(:nth-child(odd)) { background-color : lime }
+ol &gt; li:not(:nth-child(even)) { background-color : lime }
+table.t1 tr:not(:nth-child(-n+4)) { background-color : lime }
+table.t2 td:not(:nth-child(3n+1)) { background-color : lime }
+table.t1 td, table.t2 td { border : thin black solid }</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      HTML
+     </h3>
+     <pre class="forHtml">
+&lt;ul&gt;/&lt;
+&lt;li&gt;at/&lt;
+&gt;rt/&lt;
+&gt;dt/&lt;/li&gt; ne&lt;li class="red"&gt;dt&lt;
+&gt;dt/&lt;7.3&gt;dt&lt;      
+&gt;dt/&lt;llec neerg&gt;"der"=ssalc d&lt;/li&gt;t/&lt;&lt;li&gt; neerg&gt;"de&lt;/li&gt;alc&lt;li class="red"&gt;&lt;      
+&gt;dt/&lt;llec neerg&gt;"der"=ssalc dt&lt;
+&gt;dt/&lt;llec ne&lt;/li&gt;der&lt;li&gt;alc dt&lt;
+&gt;dt/&lt;1.&lt;/li&gt;
+&gt;r&lt;li class="red"&gt;llec neerg&gt;"der"=ssalc dt&lt;
+&gt;dt/&lt;7.2&gt;dt&lt;      
+&gt;dt/&lt;&lt;/li&gt;n&lt;/ul&gt;"&lt;ol&gt;=ss&lt;li class="red"&gt;c neerg&gt;"der"=ssalc dt&lt;
+&gt;dt/&lt;4.2&gt;dt&lt;      
+&gt;dt/&lt;lle&lt;/li&gt;rg&gt;&lt;li&gt;"=ssalc dt&lt;
+&gt;dt/&lt;/li&gt; ne&lt;li class="red"&gt;dt&lt;
+&gt;dt/&lt;1.2&gt;dt&lt;
+&gt;rt&lt;  
+&gt;rt/&lt;
+&gt;dt/&lt;llec neerg&gt;"der"&lt;/li&gt;c d&lt;li&gt;dt/&lt;7.1&gt;dt&lt;     &lt;/li&gt;/&lt;l&lt;li class="red"&gt;ssalc dt&lt;
+&gt;dt/&lt;llec neerg&gt;"der"=ssalc dt&lt;
+&gt;dt/&lt;4.1&gt;&lt;/li&gt;   &lt;li&gt;t/&lt;llec neerg&gt;"&lt;/li&gt;s&lt;/ol&gt;d&lt;div&gt;t&lt;table border="1" class="t1"&gt;&gt;dt&lt;tr&gt;1&lt;td&gt;
+&gt;r&lt;/td&gt;&gt;&lt;td&gt;red&lt;/td&gt;2t"=ss&lt;td&gt;elb&lt;/td&gt;p&lt;/tr&gt;
+&gt;e&lt;tr&gt;/&lt;td&gt;t/&lt;&lt;/td&gt;&lt;&lt;td&gt;dt&lt;&lt;/td&gt;&lt;2.6&gt;d&lt;td&gt;dt/&lt;/td&gt;:&lt;/tr&gt;nee&lt;tr&gt;t&lt;td&gt;der&lt;/td&gt;l&lt;td&gt;&lt;  &lt;/td&gt;&lt;
+&gt;dt/&lt;td&gt;&gt;dt&lt;/td&gt;/&lt;/tr&gt;dt&lt;&lt;tr&gt;/&lt;td&gt; : &lt;/td&gt;e&lt;td&gt;dt&lt;&lt;/td&gt;r"=ssal&lt;td&gt;&lt;  &lt;/td&gt;&lt;&lt;/tr&gt;&lt;3.&lt;tr class="red"&gt;&lt;&lt;td&gt;dt&lt;
+&gt;dt/&lt;1.4&gt;dt&lt;/td&gt;&lt;&lt;td&gt;rt/&lt;/td&gt;/&lt;td&gt;&gt;dt&lt;/td&gt; &lt;/tr&gt;&lt;2.&lt;tr class="red"&gt;t&lt;td&gt;t&lt;  
+&gt;rt/&lt;
+&gt;dt/&lt;/td&gt;d&lt;td&gt;   &lt;/td&gt;&lt;&lt;td&gt;dt&lt;&lt;/td&gt;&lt;&lt;/tr&gt;t&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;d&lt;table class="t2" border="1"&gt;&gt;dt&lt;tr&gt;1&lt;td&gt;
+&gt;r&lt;/td&gt;&gt;&lt;td class="red"&gt;edrob elba&lt;/td&gt;i&lt;td class="red"&gt;ti tsil ht&lt;/td&gt;l&lt;  
+&gt;i&lt;td&gt;nuo&lt;/td&gt;b&lt;td class="red"&gt;uohs meti &lt;/td&gt;h&lt;td class="red"&gt;ssalc il&lt; &lt;/td&gt;/&lt;meti &lt;td&gt; ht&lt;/td&gt;i&lt;td class="red"&gt;kcab neerg&lt;/td&gt;a&lt;/tr&gt;ohs&lt;tr&gt;i&lt;td&gt;l d&lt;/td&gt;s&lt;td class="red"&gt;il&lt;  
+&gt;il/&lt;/td&gt; &lt;td class="red"&gt; 
+&gt;il/&lt;dnu&lt;/td&gt;ab neer&lt;td&gt;eva&lt;/td&gt;o&lt;td class="red"&gt;if sihT&gt;"d&lt;/td&gt;s&lt;td class="red"&gt;lu/&lt;
+&gt;il/&lt;&lt;/td&gt;gkcab n&lt;td&gt; a &lt;/td&gt;d&lt;td class="red"&gt;htxis sihT&lt;/td&gt;"&lt;/tr&gt;c i&lt;tr&gt;
+&lt;td&gt;&lt;me&lt;/td&gt;i&lt;td class="red"&gt;l/&lt;dnuorgk&lt;/td&gt;e&lt;td class="red"&gt;s meti tsi&lt;/td&gt;uof sih&lt;td&gt;er"&lt;/td&gt;c&lt;td class="red"&gt; drihT&gt;il&lt;&lt;/td&gt;l&lt;td class="red"&gt;rg a evah &lt;/td&gt;s meti &lt;td&gt; dn&lt;/td&gt;s&lt;td class="red"&gt;il&lt;  
+&gt;il/&lt;/td&gt; &lt;/tr&gt;t&lt;/table&gt; &lt;/div&gt;
+</pre>
+    </div>
+    <div class="col-4 border">
+     <h3>
+      Solution
+     </h3>
+     <a class="btn btn-danger" href="Solution139.html" id="solution1" role="button">
+      Solution
+     </a>
+     <div class="solution">
+      <div class="testText">
+       <ul>
+        &lt;
+        <li>
+         /
+         <llec neerg="">
+          "d
+         </llec>
+        </li>
+        s
+        <li class="red">
+         &gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "der"=ssalc dt&lt;
+&gt;dt/
+          <llec li="" neerg<="">
+           "
+           <li>
+            lc dt&lt;
+&gt;dt
+           </li>
+           &gt;
+           <li class="red">
+            erg&gt;"der"=ssalc dt&lt;
+&gt;dt/
+            <llec neerg="">
+             "der"=ssalc dt&lt;
+            </llec>
+           </li>
+           1
+           <li>
+            t&lt;
+&gt;rt&lt;
+&gt;rt/&lt;
+&gt;
+           </li>
+           l
+           <li class="red">
+            salc dt&lt;
+&gt;dt/&lt;7.2&gt;dt&lt;
+&gt;dt/
+            <llec neerg="">
+             "der"=ssalc d
+            </llec>
+           </li>
+           t
+          </llec>
+         </llec>
+        </li>
+       </ul>
+       c
+       <ol>
+        r
+        <li class="red">
+         &lt;
+&gt;dt/&lt;4.2&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "der"=ssalc dt&lt;
+&gt;dt/
+         </llec>
+        </li>
+        <li>
+         g&gt;"der"=ssalc dt
+        </li>
+        /
+        <li class="red">
+         t/&lt;
+&gt;dt/
+         <llec neerg="">
+          "der"=ssalc dt&lt;
+&gt;dt/&lt;7.1&gt;dt&lt;
+&gt;d
+         </llec>
+        </li>
+        e
+        <li>
+         erg&gt;"der"=ssalc
+        </li>
+        d
+        <li class="red">
+         er"=ssalc dt&lt;
+&gt;dt/&lt;4.1&gt;dt&lt;
+&gt;dt/
+         <llec neerg="">
+          "der"=ss
+         </llec>
+        </li>
+        t
+        <li>
+         t/
+         <llec neerg="">
+          "
+         </llec>
+        </li>
+        s
+       </ol>
+       d
+       <div>
+        t
+        <table border="1" class="t1">
+         "
+         <tr>
+          r
+          <td>
+           lba
+          </td>
+          /
+          <td>
+           &gt;e
+          </td>
+          &lt;
+          <td>
+           /&lt;
+          </td>
+          3
+         </tr>
+         &lt;
+         <tr>
+          /
+          <td>
+           &gt;dt
+          </td>
+          /
+          <td>
+           :
+          </td>
+          e
+          <td>
+           dt&lt;
+          </td>
+          r
+         </tr>
+         l
+         <tr>
+          &lt;
+          <td>
+           /&lt;
+          </td>
+          3
+          <td>
+           t&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+         </tr>
+         w
+         <tr>
+          e
+          <td>
+           dt&lt;
+          </td>
+          r
+          <td>
+           alc
+          </td>
+          &gt;
+          <td>
+           &gt;d
+          </td>
+          4
+         </tr>
+         &gt;
+         <tr class="red">
+          &lt;
+          <td>
+           dt&lt;
+&gt;rt&lt;
+&gt;rt/&lt;
+          </td>
+          3
+          <td>
+           t&lt;
+          </td>
+          2
+          <td>
+           t&lt;
+          </td>
+          1
+         </tr>
+         &lt;
+         <tr class="red">
+          &lt;
+          <td>
+           dt&lt;
+&gt;dt/&lt;2.2&gt;dt
+          </td>
+          /
+          <td>
+           &gt;dt
+          </td>
+          &lt;
+          <td>
+           /&lt;
+          </td>
+          3
+         </tr>
+         &lt;
+        </table>
+        1
+        <p>
+        </p>
+        t
+        <table border="1" class="t2">
+         "
+         <tr>
+          r
+          <td>
+           lba
+          </td>
+          i
+          <td class="red">
+           ti tsil ht
+          </td>
+          l
+          <td class="red">
+           b neerg a
+          </td>
+          d
+          <td>
+           s m
+          </td>
+          s
+          <td class="red">
+           er"=ssalc
+          </td>
+          i
+          <td class="red">
+           uoF&gt;il&lt;
+&gt;i
+          </td>
+          u
+          <td>
+           cab
+          </td>
+          g
+          <td class="red">
+           eti tsil d
+          </td>
+          s
+         </tr>
+         d
+         <tr>
+          s
+          <td>
+           il
+          </td>
+          /
+          <td class="red">
+           S&gt;il&lt;
+&gt;il/
+          </td>
+          r
+          <td class="red">
+           ah dluohs
+          </td>
+          t
+          <td>
+           tsr
+          </td>
+          h
+          <td class="red">
+           &lt;
+&gt;lo&lt;
+&gt;lu
+          </td>
+          l
+          <td class="red">
+           rg a evah
+          </td>
+          s
+          <td>
+           i t
+          </td>
+          t
+          <td class="red">
+           salc il&lt;
+&gt;
+          </td>
+          e
+         </tr>
+         i
+         <tr>
+          f
+          <td>
+           l&lt;
+          </td>
+          d
+          <td class="red">
+           a evah dlu
+          </td>
+          e
+          <td class="red">
+           ihT&gt;"der"=
+          </td>
+          <td>
+           &gt;il
+          </td>
+          l
+          <td class="red">
+           dnuorgkcab
+          </td>
+          g
+          <td class="red">
+           eti tsil d
+          </td>
+          <td>
+           &gt;"d
+          </td>
+          s
+          <td class="red">
+           i tsil tsr
+          </td>
+          &lt;
+         </tr>
+        </table>
+        e
+       </div>
+       l
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <br/>
+  <br/>
+ </body>
+</html>
