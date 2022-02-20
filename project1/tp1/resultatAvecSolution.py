@@ -63,10 +63,10 @@ numero_page = sys.argv[2]
 real_int_numero = int(numero_page)
  
 
-if(the_page != "./monrep/css3-modsel-1.html"):
+if(the_page != "./monrep/3-modsel-1.html"):
     prev_link['href'] = "noSolution" + str(real_int_numero-1) + ".html"
 
-if(the_page != "./monrep/css3-modsel-172.html"):
+if(the_page != ",/monrep/3-modsel-172.html"):
     next_link['href'] = "noSolution"  + str(real_int_numero+1) + ".html"
 
 
