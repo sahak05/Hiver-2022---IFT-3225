@@ -1,1 +1,2 @@
-div:hover > p:first-child { background-color : lime }
+html:not(:root), test:not(:root) { background-color: red; }
+p { background-color: lime; }

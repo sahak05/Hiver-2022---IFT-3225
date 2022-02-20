@@ -1,11 +1,9 @@
-p {
-  background-color: navy;
-  color: white;
+p:first-line {
+  background-color: red;
 }
 
-p:not(:target) {
-  background-color: white;
-  color: black;
+p::first-line {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style36.css.map */

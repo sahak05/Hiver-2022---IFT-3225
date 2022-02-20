@@ -1,9 +1,17 @@
-p {
-  color: red;
+button {
+  background-color: red;
 }
 
-p:not([class$=""]) {
-  color: lime;
+input {
+  background-color: red;
+}
+
+button:not(:disabled) {
+  background-color: lime;
+}
+
+input:not(:disabled) {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style134.css.map */

@@ -1,4 +1,3 @@
-button { background-color : red }
-input { background-color : red }
-button:not(:enabled) { background-color : lime }
-input:not(:enabled)  { background-color : lime }
+
+  span::before { background-color: red; content: 'FAILED'; }
+  span:before { background-color: lime; content: 'PASSED'; }

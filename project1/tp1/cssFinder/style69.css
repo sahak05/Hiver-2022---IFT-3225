@@ -1,9 +1,10 @@
-p {
-  color: red;
+:link, :visited {
+  color: navy;
+  text-decoration: none;
 }
 
-blockquote > div p {
-  color: green;
+:link:hover span {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style69.css.map */

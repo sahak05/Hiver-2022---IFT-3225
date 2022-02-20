@@ -1,23 +1,9 @@
-#test1 {
-  background: red;
-  display: block;
-  padding: 1em;
-  margin: 1em;
+input, span {
+  background-color: red;
 }
 
-#test1:empty {
-  background: lime;
-}
-
-#test2 {
-  background: lime;
-  display: block;
-  padding: 1em;
-  margin: 1em;
-}
-
-#test2:empty {
-  background: red;
+input:checked, input:checked + span {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style80.css.map */

@@ -1,9 +1,9 @@
-div.stub > * {
-  color: red;
+.one\.word {
+  background: lime;
 }
 
-div.stub *:not([title^="si on"]) {
-  color: lime;
+p {
+  background: red;
 }
 
 /*# sourceMappingURL=style23.css.map */

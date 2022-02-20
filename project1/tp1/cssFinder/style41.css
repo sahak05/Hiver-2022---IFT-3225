@@ -1,21 +1,11 @@
-p {
+span::after {
   background-color: red;
+  content: "FAILED";
 }
 
-p[class~=b] {
+span:after {
   background-color: lime;
-}
-
-address {
-  background-color: red;
-}
-
-address[title~=foo] {
-  background-color: lime;
-}
-
-span[class~=b] {
-  background-color: red;
+  content: "PASSED";
 }
 
 /*# sourceMappingURL=style41.css.map */

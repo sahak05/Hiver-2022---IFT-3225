@@ -1,8 +1,8 @@
-a:not(:focus) {
-  background-color: transparent;
+p:first-letter {
+  background-color: red;
 }
 
-a {
+p::first-letter {
   background-color: lime;
 }
 

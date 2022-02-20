@@ -1,9 +1,9 @@
-.red {
-  background-color: red;
+p {
+  background: lime;
 }
 
-div.stub > p ~ p {
-  background-color: lime;
+.\\m {
+  background: red;
 }
 
 /*# sourceMappingURL=style20.css.map */

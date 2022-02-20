@@ -1,3 +1,2 @@
-
-p { color: lime; }
-p[class^=""] { color: red; }
+div.stub * { background-color : red  }
+div.stub *:not(:lang(fr)) { background-color : green }

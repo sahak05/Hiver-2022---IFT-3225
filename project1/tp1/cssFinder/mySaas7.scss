@@ -1,1 +1,3 @@
-p:before { background-color : lime ; content : "GENERATED CONTENT "}
+
+ p { background: lime; }
+ p:empty { background: red; }

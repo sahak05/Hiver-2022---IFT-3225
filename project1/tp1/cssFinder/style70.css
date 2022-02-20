@@ -1,9 +1,5 @@
-p {
-  color: red;
-}
-
-blockquote + div ~ p {
-  color: green;
+a:active {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style70.css.map */

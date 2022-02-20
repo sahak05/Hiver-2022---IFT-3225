@@ -1,17 +1,13 @@
-li {
+.white {
+  background-color: transparent !important;
+}
+
+.red {
   background-color: red;
 }
 
-.t1 {
+div.t1 p {
   background-color: lime;
-}
-
-li.t2 {
-  background-color: lime;
-}
-
-.t3 {
-  background-color: red;
 }
 
 /*# sourceMappingURL=style107.css.map */

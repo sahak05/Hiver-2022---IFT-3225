@@ -1,13 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: red;
 }
 
-p:only-child {
-  background-color: lime;
-}
-
-div.testText > div > p {
-  margin-left: 1em;
+blockquote ~ div + p {
+  color: green;
 }
 
 /*# sourceMappingURL=style167.css.map */

@@ -1,31 +1,9 @@
-p {
-  background: green;
-  color: white;
+p::first-letter {
+  background-color: red;
 }
 
-p:not(.t1):not(.t2) {
-  background: red;
-  color: yellow;
-}
-
-div {
-  background: red;
-  color: yellow;
-}
-
-div:not(.t1) {
-  background: green;
-  color: white;
-}
-
-address {
-  background: green;
-  color: white;
-}
-
-address:not(.t5):not(.t5) {
-  background: red;
-  color: yellow;
+p:first-letter {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style35.css.map */

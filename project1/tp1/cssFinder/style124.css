@@ -1,17 +1,9 @@
-p {
-  color: green;
+div.stub > * {
+  color: red;
 }
 
-span:first-line {
-  background: red;
-  color: yellow;
-  font-size: 4em;
-}
-
-span::first-line {
-  background: red;
-  color: yellow;
-  font-size: 4em;
+div.stub *:not(#foo) {
+  color: lime;
 }
 
 /*# sourceMappingURL=style124.css.map */

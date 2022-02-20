@@ -1,3 +1,2 @@
-
-p { color: lime; }
-p[class$=""] { color: red; }
+p { background-color: red; }
+p:not(:target) { background-color: lime; }

@@ -1,8 +1,4 @@
-p {
-  background-color: red;
-}
-
-p[title*=bar] {
+p:first-line {
   background-color: lime;
 }
 

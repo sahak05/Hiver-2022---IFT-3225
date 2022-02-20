@@ -1,13 +1,13 @@
-* html {
+.red {
   background-color: red;
 }
 
-* :root {
-  background-color: red;
+p:not(:only-child) {
+  background-color: lime;
 }
 
-p {
-  color: green;
+div.testText > div > p {
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=style155.css.map */

@@ -1,9 +1,5 @@
-p {
-  color: green !important;
-}
-
-blockquote + div p {
-  color: red;
+a:focus {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style73.css.map */

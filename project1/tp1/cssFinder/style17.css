@@ -1,9 +1,15 @@
-.red {
-  background-color: red;
+address {
+  background: lime;
+  margin: 0;
+  height: 1em;
 }
 
-div.stub > p + p {
-  background-color: lime;
+address:empty {
+  background: red;
+}
+
+.text {
+  margin: -1em 0 0 0;
 }
 
 /*# sourceMappingURL=style17.css.map */

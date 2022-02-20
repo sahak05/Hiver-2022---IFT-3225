@@ -1,9 +1,11 @@
-p.test a {
-  background-color: red;
+p:first-letter {
+  color: lime;
+  font-size: xx-large;
 }
 
-p.test *:link {
-  background-color: lime;
+p:before {
+  color: red;
+  content: "T";
 }
 
 /*# sourceMappingURL=style98.css.map */

@@ -1,9 +1,13 @@
-p {
-  background: lime;
+* html {
+  background-color: red;
+}
+
+* :root {
+  background-color: red;
 }
 
 p {
-  background: red;
+  color: green;
 }
 
 /*# sourceMappingURL=style83.css.map */

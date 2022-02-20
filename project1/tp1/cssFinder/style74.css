@@ -1,9 +1,5 @@
-p {
-  color: red;
-}
-
-blockquote div > p {
-  color: green;
+p:target {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style74.css.map */

@@ -1,15 +1,17 @@
-address {
-  background: lime;
-  margin: 0;
-  height: 1em;
+button {
+  background-color: red;
 }
 
-address:empty {
-  background: red;
+input {
+  background-color: red;
 }
 
-.text {
-  margin: -1em 0 0 0;
+button:disabled {
+  background-color: lime;
+}
+
+input:disabled {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style79.css.map */

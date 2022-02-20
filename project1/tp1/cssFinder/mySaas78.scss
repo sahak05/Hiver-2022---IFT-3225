@@ -1,3 +1,4 @@
-
-   #test { background: red; display: block; padding: 1em; }
-   #test:not(:empty) { background: lime; }
+button { background-color : red }
+input { background-color : red }
+button:enabled { background-color : lime }
+input:enabled { background-color : lime }

@@ -1,6 +1,9 @@
-p::first-letter {
-  font-size: xx-large;
-  background-color: lime;
+#two:first-child {
+  background: red;
+}
+
+#three:last-child {
+  background: lime;
 }
 
 /*# sourceMappingURL=style172.css.map */

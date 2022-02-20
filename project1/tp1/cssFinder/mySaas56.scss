@@ -1,4 +1,4 @@
-.red { background-color : red }
-.t1 td:not(:last-child) { background-color : lime }
-p > *:not(:last-child) { background-color : lime }
-table.t1 td { border : thin black solid }
+
+  p { color: green; }
+  p:first-line { background: red; color: yellow; font-size: 4em; }
+  p::first-line { background: red; color: yellow; font-size: 4em; }

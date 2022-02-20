@@ -1,2 +1,3 @@
-p:first-letter { color: lime; font-size: xx-large; }
-p:before { color: red; content: 'T'; }
+
+   #test { background: red; display: block; padding: 1em; }
+   #stub ~ div div + div > div { background: lime; }

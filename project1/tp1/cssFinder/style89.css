@@ -1,9 +1,13 @@
-.one\.word {
-  background: lime;
+.red {
+  background-color: red;
 }
 
-p {
-  background: red;
+p:nth-last-of-type(3) {
+  background-color: lime;
+}
+
+dl > :nth-last-of-type(3n+1) {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style89.css.map */

@@ -1,9 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: green !important;
 }
 
-.t1 :only-of-type {
-  background-color: lime;
+blockquote ~ div + p {
+  color: red;
 }
 
 /*# sourceMappingURL=style168.css.map */

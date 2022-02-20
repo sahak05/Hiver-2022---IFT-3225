@@ -1,9 +1,9 @@
-p {
-  color: green;
+.green {
+  background-color: lime !important;
 }
 
-.\13  {
-  color: red;
+div.stub > p ~ p {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style117.css.map */

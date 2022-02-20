@@ -1,9 +1,15 @@
-#fail > div {
+address {
+  background: lime;
+  margin: 0;
+  height: 1em;
+}
+
+address:empty {
   background: red;
 }
 
-p {
-  background: green;
+.text {
+  margin: -1em 0 0 0;
 }
 
 /*# sourceMappingURL=style16.css.map */

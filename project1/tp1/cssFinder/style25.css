@@ -1,9 +1,17 @@
-div.stub > * {
-  color: red;
-}
+/* Error: Top-level selectors may not contain the parent selector "&".
+ *   ,
+ * 2 |   foo & address, p { background: red; }
+ *   |   ^^^^^^^^^^^^^^^^^
+ *   '
+ *   mySaas25.scss 2:3  root stylesheet */
 
-div.stub *:not([title$=tait]) {
-  color: lime;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Top-level selectors may not contain the parent selector "&".\a   \2577 \a 2 \2502    foo & address, p { background: red; }\a   \2502    ^^^^^^^^^^^^^^^^^\a   \2575 \a   mySaas25.scss 2:3  root stylesheet';
 }
-
-/*# sourceMappingURL=style25.css.map */

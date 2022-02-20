@@ -1,9 +1,13 @@
-.green {
-  background-color: lime !important;
+p {
+  background: lime;
 }
 
-div.stub > p ~ p {
-  background-color: red;
+.two\ words {
+  background: red;
 }
+
+/* the "." and "~=" forms match on a space separated list of words.
+In such a list, a word containing a space can never match, since it
+would by definition be two words. */
 
 /*# sourceMappingURL=style21.css.map */

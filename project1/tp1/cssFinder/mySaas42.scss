@@ -1,2 +1,2 @@
-input, span { background-color : red }
-input:not(:checked), input:not(:checked) + span { background-color : lime}
+p.test a { background-color : red }
+p.test *:visited { background-color : lime }

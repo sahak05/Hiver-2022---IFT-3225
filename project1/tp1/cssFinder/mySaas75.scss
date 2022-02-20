@@ -1,2 +1,2 @@
-p { background-color : red }
-p[title^="foo"] { background-color : lime }
+p { background-color: lime; }
+p:target { background-color: red; }

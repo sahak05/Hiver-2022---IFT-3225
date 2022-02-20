@@ -1,13 +1,9 @@
-.green {
-  background-color: lime !important;
+p {
+  color: red;
 }
 
-p:not(:only-child) {
-  background-color: lime;
-}
-
-div.testText > div > p {
-  margin-left: 1em;
+p:not([class$=""]) {
+  color: lime;
 }
 
 /*# sourceMappingURL=style64.css.map */

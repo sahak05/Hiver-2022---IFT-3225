@@ -1,11 +1,11 @@
-p:first-letter {
-  color: lime;
-  font-size: xx-large;
+#test {
+  background: red;
+  display: block;
+  padding: 1em;
 }
 
-p:before {
-  color: red;
-  content: "T";
+#stub ~ div div + div > div {
+  background: lime;
 }
 
 /*# sourceMappingURL=style171.css.map */

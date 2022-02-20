@@ -1,3 +1,5 @@
-
-p { color: red; }
-p:not([class^=""]) { color: lime; }
+p { background-color : red }
+p[class~="b"] { background-color : lime }
+address { background-color : red }
+address[title~="foo"] { background-color : lime }
+span[class~="b"] { background-color : red }

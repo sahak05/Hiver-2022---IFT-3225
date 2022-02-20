@@ -1,16 +1,13 @@
-div {
-  color: green;
+address {
+  background-color: red;
 }
 
-p:not(:first-line) {
-  color: yellow;
-  background: red;
+address[title=foo] {
+  background-color: lime;
 }
 
-p:not(:after) {
-  color: yellow;
-  background: red;
-  content: " THIS TEST HAS FAILED! ";
+span[title=a] {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style123.css.map */

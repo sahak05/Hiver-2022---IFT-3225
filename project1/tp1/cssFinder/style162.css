@@ -1,15 +1,9 @@
-address:empty {
-  background: lime;
+p {
+  color: green !important;
 }
 
-address {
-  background: red;
-  margin: 0;
-  height: 1em;
-}
-
-.text {
-  margin: -1em 0 0 0;
+blockquote + div ~ p {
+  color: red;
 }
 
 /*# sourceMappingURL=style162.css.map */

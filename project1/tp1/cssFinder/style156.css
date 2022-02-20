@@ -1,21 +1,13 @@
-.red {
-  background-color: red;
+.green {
+  background-color: lime !important;
 }
 
-ul > li:nth-child(odd) {
+p:not(:only-child) {
   background-color: lime;
 }
 
-ol > li:nth-child(even) {
-  background-color: lime;
-}
-
-table.t1 tr:nth-child(-n+4) {
-  background-color: lime;
-}
-
-table.t2 td:nth-child(3n+1) {
-  background-color: lime;
+div.testText > div > p {
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=style156.css.map */

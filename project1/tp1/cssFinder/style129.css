@@ -1,9 +1,9 @@
-div :not(:enabled):not(:disabled) {
-  background: lime;
+a:not(:focus) {
+  background-color: transparent;
 }
 
-p {
-  background: red;
+a {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style129.css.map */

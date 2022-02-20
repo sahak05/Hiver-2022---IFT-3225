@@ -1,5 +1,3 @@
-p { background-color : red }
-p[class~="b"] { background-color : lime }
-address { background-color : red }
-address[title~="foo"] { background-color : lime }
-span[class~="b"] { background-color : red }
+
+  span::after { background-color: red; content: 'FAILED'; }
+  span:after { background-color: lime; content: 'PASSED'; }

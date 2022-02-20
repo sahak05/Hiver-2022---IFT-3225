@@ -1,2 +1,2 @@
-p::first-letter { color: lime; font-size: xx-large; }
- p::before { color: red; content: 'T'; }
+p { background-color : red }
+p[title*="bar"] { background-color : lime }

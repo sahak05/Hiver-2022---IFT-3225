@@ -1,13 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: red;
 }
 
-p:nth-of-type(3) {
-  background-color: lime;
-}
-
-dl > :nth-of-type(3n+1) {
-  background-color: lime;
+blockquote > div p {
+  color: green;
 }
 
 /*# sourceMappingURL=style160.css.map */

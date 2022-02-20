@@ -1,1 +1,2 @@
-p::before { background-color : lime ; content : "GENERATED CONTENT "}
+div :not(:enabled):not(:disabled) { background: lime; }
+p { background : red;}

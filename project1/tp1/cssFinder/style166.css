@@ -1,13 +1,8 @@
-.red {
+p {
   background-color: red;
 }
 
-address {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-address:last-of-type {
+p[title^=foo] {
   background-color: lime;
 }
 

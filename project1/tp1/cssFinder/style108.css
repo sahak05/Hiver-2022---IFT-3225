@@ -1,11 +1,13 @@
-span:after {
-  background-color: red;
-  content: "FAILED";
+.white {
+  background-color: transparent !important;
 }
 
-span::after {
+.green {
   background-color: lime;
-  content: "PASSED";
+}
+
+div.t1 p {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style108.css.map */

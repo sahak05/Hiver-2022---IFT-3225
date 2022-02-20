@@ -1,3 +1,2 @@
-.red { background-color : red }
-p:only-child { background-color : lime }
-div.testText > div > p { margin-left : 1em }
+p { color: red; }
+blockquote ~ div + p { color: green; }

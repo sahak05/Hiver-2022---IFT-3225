@@ -1,3 +1,2 @@
-
- p { color: green; }
- .\13 { color: red; }
+.green { background-color : lime ! important }
+div.stub > p ~ p { background-color : red }

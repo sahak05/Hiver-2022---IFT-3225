@@ -1,6 +1,23 @@
-p:first-letter {
-  font-size: xx-large;
-  background-color: lime;
+#test1 {
+  background: red;
+  display: block;
+  padding: 1em;
+  margin: 1em;
+}
+
+#test1:empty {
+  background: lime;
+}
+
+#test2 {
+  background: lime;
+  display: block;
+  padding: 1em;
+  margin: 1em;
+}
+
+#test2:empty {
+  background: red;
 }
 
 /*# sourceMappingURL=style170.css.map */

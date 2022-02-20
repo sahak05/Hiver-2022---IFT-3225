@@ -1,13 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: red;
 }
 
-.t1 td:first-child {
-  background-color: lime;
-}
-
-p > *:first-child {
-  background-color: lime;
+blockquote + div p {
+  color: green;
 }
 
 /*# sourceMappingURL=style163.css.map */

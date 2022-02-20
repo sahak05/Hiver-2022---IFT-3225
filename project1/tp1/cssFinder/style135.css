@@ -1,9 +1,21 @@
 p {
-  color: red;
+  background-color: red;
 }
 
-p:not([class^=""]) {
-  color: lime;
+p[class~=b] {
+  background-color: lime;
+}
+
+address {
+  background-color: red;
+}
+
+address[title~=foo] {
+  background-color: lime;
+}
+
+span[class~=b] {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style135.css.map */

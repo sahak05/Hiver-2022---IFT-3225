@@ -1,17 +1,16 @@
-.red {
-  background-color: red;
+div {
+  color: green;
 }
 
-.t1 td:not(:first-child) {
-  background-color: lime;
+p:not(:first-line) {
+  color: yellow;
+  background: red;
 }
 
-p > *:not(:first-child) {
-  background-color: lime;
-}
-
-table.t1 td {
-  border: thin black solid;
+p:not(:after) {
+  color: yellow;
+  background: red;
+  content: " THIS TEST HAS FAILED! ";
 }
 
 /*# sourceMappingURL=style54.css.map */

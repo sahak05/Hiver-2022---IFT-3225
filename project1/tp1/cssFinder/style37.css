@@ -1,8 +1,8 @@
-p {
+p::first-line {
   background-color: red;
 }
 
-p:not(:target) {
+p:first-line {
   background-color: lime;
 }
 

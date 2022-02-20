@@ -1,2 +1,3 @@
-p { background-color: red; }
-p:not(:target) { background-color: lime; }
+
+  p::first-line { background-color: red; }
+  p:first-line { background-color: lime; }

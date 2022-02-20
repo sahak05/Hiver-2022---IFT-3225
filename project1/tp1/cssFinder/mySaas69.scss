@@ -1,2 +1,3 @@
-p { color: red; }
-blockquote > div p { color: green; }
+
+:link, :visited { color: navy; text-decoration: none; }
+:link:hover span { background-color : lime }

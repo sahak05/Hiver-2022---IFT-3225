@@ -1,13 +1,17 @@
-address {
-  background-color: red;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 3 |   [*|*=test]{ background: red; }
+ *   |      ^
+ *   '
+ *   mySaas28.scss 3:6  root stylesheet */
 
-address[title=foo] {
-  background-color: lime;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 3 \2502    [*|*=test]{ background: red; }\a   \2502       ^\a   \2575 \a   mySaas28.scss 3:6  root stylesheet";
 }
-
-span[title=a] {
-  background-color: red;
-}
-
-/*# sourceMappingURL=style28.css.map */

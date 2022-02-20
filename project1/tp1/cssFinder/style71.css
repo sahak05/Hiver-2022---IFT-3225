@@ -1,9 +1,6 @@
-p {
-  color: green !important;
-}
-
-blockquote + div ~ p {
-  color: red;
+button:active {
+  background: green;
+  color: white;
 }
 
 /*# sourceMappingURL=style71.css.map */

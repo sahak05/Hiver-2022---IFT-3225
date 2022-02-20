@@ -1,9 +1,9 @@
 p {
-  color: lime;
+  background-color: red;
 }
 
-p[class$=""] {
-  color: red;
+p:not(:target) {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style131.css.map */

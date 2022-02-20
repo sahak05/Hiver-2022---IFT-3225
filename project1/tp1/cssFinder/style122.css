@@ -1,10 +1,9 @@
-div {
-  color: green;
+div.stub > * {
+  color: red;
 }
 
-p::first-child {
-  color: yellow;
-  background: red;
+div.stub *:not(.foo) {
+  color: lime;
 }
 
 /*# sourceMappingURL=style122.css.map */

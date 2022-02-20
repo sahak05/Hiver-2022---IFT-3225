@@ -1,17 +1,14 @@
-/* Error: expected "|".
- *   ,
- * 3 |   [*=test]{ background: red; }
- *   |     ^
- *   '
- *   mySaas93.scss 3:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "|".\a   \2577 \a 3 \2502    [*=test]{ background: red; }\a   \2502      ^\a   \2575 \a   mySaas93.scss 3:5  root stylesheet';
+.red {
+  background-color: red;
 }
+
+address {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+address:last-of-type {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style93.css.map */

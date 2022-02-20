@@ -1,9 +1,9 @@
-p {
-  color: green !important;
+ul > li {
+  background-color: red;
 }
 
-blockquote ~ div + p {
-  color: red;
+li:lang(en-GB) {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style77.css.map */

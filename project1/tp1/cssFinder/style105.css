@@ -1,11 +1,6 @@
-span:before {
-  background-color: red;
-  content: "FAILED";
-}
-
-span::before {
+p::after {
   background-color: lime;
-  content: "PASSED";
+  content: "GENERATED CONTENT ";
 }
 
 /*# sourceMappingURL=style105.css.map */

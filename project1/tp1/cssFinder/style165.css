@@ -1,14 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: red;
 }
 
-address {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-address:first-of-type {
-  background-color: lime;
+blockquote div > p {
+  color: green;
 }
 
 /*# sourceMappingURL=style165.css.map */

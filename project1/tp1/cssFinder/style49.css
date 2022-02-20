@@ -1,25 +1,9 @@
-.green {
-  background-color: lime !important;
+p {
+  color: green;
 }
 
-ul > li:not(:nth-last-child(odd)) {
-  background-color: red;
-}
-
-ol > li:not(:nth-last-child(even)) {
-  background-color: red;
-}
-
-table.t1 tr:not(:nth-last-child(-n+4)) {
-  background-color: red;
-}
-
-table.t2 td:not(:nth-last-child(3n+1)) {
-  background-color: red;
-}
-
-table.t1 td, table.t2 td {
-  border: thin black solid;
+.\13  {
+  color: red;
 }
 
 /*# sourceMappingURL=style49.css.map */

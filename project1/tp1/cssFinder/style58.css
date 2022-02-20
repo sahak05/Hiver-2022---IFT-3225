@@ -1,17 +1,17 @@
-.green {
-  background-color: lime !important;
+p {
+  color: green;
 }
 
-.t1 td:not(:last-child) {
-  background-color: red;
+p:first-letter {
+  background: red;
+  color: yellow;
+  font-size: 4em;
 }
 
-p > *:not(:last-child) {
-  background-color: red;
-}
-
-table.t1 td {
-  border: thin black solid;
+p::first-letter {
+  background: red;
+  color: yellow;
+  font-size: 4em;
 }
 
 /*# sourceMappingURL=style58.css.map */

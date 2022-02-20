@@ -1,9 +1,9 @@
-p {
-  color: red;
+:root {
+  background-color: green;
 }
 
-blockquote ~ div + p {
-  color: green;
+:target {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style76.css.map */

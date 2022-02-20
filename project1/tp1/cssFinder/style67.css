@@ -1,9 +1,30 @@
 p {
-  background-color: lime;
+  color: navy;
 }
 
-p:not(:not(p)) {
-  background-color: red;
+.a a:hover {
+  background: green;
+  color: white;
+}
+
+.b a:hover {
+  background: red;
+  color: yellow;
+}
+
+.b a:link {
+  background: green;
+  color: white;
+}
+
+.c :link {
+  background: green;
+  color: white;
+}
+
+.c :visited:hover {
+  background: red;
+  color: yellow;
 }
 
 /*# sourceMappingURL=style67.css.map */

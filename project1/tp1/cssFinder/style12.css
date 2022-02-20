@@ -1,13 +1,26 @@
-.white {
-  background-color: transparent !important;
+p {
+  background: green;
+  color: white;
 }
 
-.red {
-  background-color: red;
+.t1:not(.t2) {
+  background: red;
+  color: yellow;
 }
 
-div > p.test {
-  background-color: lime;
+:not(.t2).t1 {
+  background: red;
+  color: yellow;
+}
+
+.t2:not(.t1) {
+  background: red;
+  color: yellow;
+}
+
+:not(.t1).t2 {
+  background: red;
+  color: yellow;
 }
 
 /*# sourceMappingURL=style12.css.map */

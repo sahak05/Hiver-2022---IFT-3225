@@ -1,13 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: lime;
 }
 
-p:not(:only-child) {
-  background-color: lime;
-}
-
-div.testText > div > p {
-  margin-left: 1em;
+p[class*=""] {
+  color: red;
 }
 
 /*# sourceMappingURL=style63.css.map */

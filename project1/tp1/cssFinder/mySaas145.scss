@@ -1,1 +1,3 @@
-p:target { background-color : lime }
+.red { background-color : red }
+p:not(:nth-last-of-type(3)) { background-color : lime }
+dl > *:not(:nth-last-of-type(3n+1)) { background-color : lime }

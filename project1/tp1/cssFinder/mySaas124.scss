@@ -1,4 +1,2 @@
-
-  p { color: green; }
-  span:first-line { background: red; color: yellow; font-size: 4em; }
-  span::first-line { background: red; color: yellow; font-size: 4em; }
+div.stub > * { color : red }
+div.stub *:not(#foo) { color : lime }

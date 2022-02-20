@@ -1,2 +1,4 @@
-ul > li { background-color : red }
-li:lang(en-GB) { background-color : lime }
+.green { background-color : lime ! important }
+.t1 td:not(:first-child) { background-color : red }
+p > *:not(:first-child) { background-color : red }
+table.t1 td { border : thin black solid }

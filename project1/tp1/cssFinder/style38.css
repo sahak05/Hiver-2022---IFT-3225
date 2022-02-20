@@ -1,9 +1,11 @@
-div.stub * {
+span:before {
   background-color: red;
+  content: "FAILED";
 }
 
-div.stub *:not(:lang(fr)) {
-  background-color: green;
+span::before {
+  background-color: lime;
+  content: "PASSED";
 }
 
 /*# sourceMappingURL=style38.css.map */

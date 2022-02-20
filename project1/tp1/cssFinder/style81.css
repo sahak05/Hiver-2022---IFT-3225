@@ -1,11 +1,9 @@
-#test {
-  background: red;
-  display: block;
-  padding: 1em;
+html {
+  background-color: red;
 }
 
-#stub ~ div div + div > div {
-  background: lime;
+*:root {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style81.css.map */

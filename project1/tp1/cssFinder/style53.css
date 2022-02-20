@@ -1,13 +1,10 @@
-.green {
-  background-color: lime !important;
+div {
+  color: green;
 }
 
-p:not(:nth-last-of-type(3)) {
-  background-color: red;
-}
-
-dl > *:not(:nth-last-of-type(3n+1)) {
-  background-color: red;
+p::first-child {
+  color: yellow;
+  background: red;
 }
 
 /*# sourceMappingURL=style53.css.map */

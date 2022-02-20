@@ -1,17 +1,10 @@
-p {
-  color: green;
+div.stub * {
+  color: lime;
+  text-decoration: none;
 }
 
-p:first-letter {
-  background: red;
-  color: yellow;
-  font-size: 4em;
-}
-
-p::first-letter {
-  background: red;
-  color: yellow;
-  font-size: 4em;
+div.stub > * > *:not(:hover) {
+  color: black;
 }
 
 /*# sourceMappingURL=style127.css.map */

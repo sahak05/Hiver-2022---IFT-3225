@@ -1,13 +1,21 @@
-p {
-  background: lime;
+.green {
+  background-color: lime !important;
 }
 
-.two\ words {
-  background: red;
+ul > li:nth-last-child(odd) {
+  background-color: red;
 }
 
-/* the "." and "~=" forms match on a space separated list of words.
-In such a list, a word containing a space can never match, since it
-would by definition be two words. */
+ol > li:nth-last-child(even) {
+  background-color: red;
+}
+
+table.t1 tr:nth-last-child(-n+4) {
+  background-color: red;
+}
+
+table.t2 td:nth-last-child(3n+1) {
+  background-color: red;
+}
 
 /*# sourceMappingURL=style87.css.map */

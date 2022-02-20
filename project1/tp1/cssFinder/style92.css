@@ -1,17 +1,14 @@
-/* Error: Top-level selectors may not contain the parent selector "&".
- *   ,
- * 2 |   foo & address, p { background: red ! important; }
- *   |   ^^^^^^^^^^^^^^^^^
- *   '
- *   mySaas92.scss 2:3  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Top-level selectors may not contain the parent selector "&".\a   \2577 \a 2 \2502    foo & address, p { background: red ! important; }\a   \2502    ^^^^^^^^^^^^^^^^^\a   \2575 \a   mySaas92.scss 2:3  root stylesheet';
+.red {
+  background-color: red;
 }
+
+address {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+address:first-of-type {
+  background-color: lime;
+}
+
+/*# sourceMappingURL=style92.css.map */

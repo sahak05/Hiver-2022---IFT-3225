@@ -1,3 +1,2 @@
-
- p { color: red; }
- .\31 \33 { color: green; }
+div.stub > * { color : red }
+div.stub *:not([title^="si on"]) { color : lime }

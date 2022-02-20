@@ -1,2 +1,3 @@
-div.stub > * { color : red }
-div.stub *:not([title*=" on"]) { color : lime }
+
+  foo & address, p { background: red ! important; }
+  p { background: lime; }

@@ -1,17 +1,17 @@
-button {
+.red {
   background-color: red;
 }
 
-input {
-  background-color: red;
-}
-
-button:enabled {
+.t1 td:not(:last-child) {
   background-color: lime;
 }
 
-input:enabled {
+p > *:not(:last-child) {
   background-color: lime;
+}
+
+table.t1 td {
+  border: thin black solid;
 }
 
 /*# sourceMappingURL=style149.css.map */

@@ -1,9 +1,13 @@
-p.test a {
-  background-color: red;
+.white {
+  background-color: transparent !important;
 }
 
-p.test *:visited {
+.green {
   background-color: lime;
+}
+
+div > p.test {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style110.css.map */

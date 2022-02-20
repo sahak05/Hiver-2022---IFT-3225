@@ -1,3 +1,3 @@
-
-  span::after { background-color: red; content: 'FAILED'; }
-  span:after { background-color: lime; content: 'PASSED'; }
+.white { background-color: transparent ! important; }
+.red { background-color: red; }
+div > p.test { background-color: lime; }

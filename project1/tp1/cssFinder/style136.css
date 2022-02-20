@@ -1,9 +1,9 @@
-p {
-  color: red;
+input, span {
+  background-color: red;
 }
 
-p:not([class*=""]) {
-  color: lime;
+input:not(:checked), input:not(:checked) + span {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style136.css.map */

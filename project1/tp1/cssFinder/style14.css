@@ -1,12 +1,20 @@
-.white {
-  background-color: transparent !important;
+li {
+  background-color: red;
 }
 
-.green {
+#t1 {
   background-color: lime;
 }
 
-div > p.test {
+li#t2 {
+  background-color: lime;
+}
+
+li#t3 {
+  background-color: lime;
+}
+
+#t4 {
   background-color: red;
 }
 

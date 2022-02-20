@@ -1,9 +1,6 @@
-p:first-line {
-  background-color: red;
-}
-
-p::first-line {
+p::before {
   background-color: lime;
+  content: "GENERATED CONTENT ";
 }
 
 /*# sourceMappingURL=style103.css.map */

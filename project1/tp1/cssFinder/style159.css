@@ -1,20 +1,8 @@
-.green {
-  background-color: lime !important;
+p {
+  background-color: lime;
 }
 
-ul > li:nth-last-child(odd) {
-  background-color: red;
-}
-
-ol > li:nth-last-child(even) {
-  background-color: red;
-}
-
-table.t1 tr:nth-last-child(-n+4) {
-  background-color: red;
-}
-
-table.t2 td:nth-last-child(3n+1) {
+p:not(:not(p)) {
   background-color: red;
 }
 

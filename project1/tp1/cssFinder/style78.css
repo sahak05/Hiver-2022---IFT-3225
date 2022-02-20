@@ -1,11 +1,17 @@
-#test {
-  background: red;
-  display: block;
-  padding: 1em;
+button {
+  background-color: red;
 }
 
-#test:not(:empty) {
-  background: lime;
+input {
+  background-color: red;
+}
+
+button:enabled {
+  background-color: lime;
+}
+
+input:enabled {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=style78.css.map */

@@ -1,25 +1,17 @@
-.red {
-  background-color: red;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 3 |  .13{ color: red; }
+ *   |   ^
+ *   '
+ *   mySaas48.scss 3:3  root stylesheet */
 
-ul > li:not(:nth-last-child(odd)) {
-  background-color: lime;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 3 \2502   .13{ color: red; }\a   \2502    ^\a   \2575 \a   mySaas48.scss 3:3  root stylesheet";
 }
-
-ol > li:not(:nth-last-child(even)) {
-  background-color: lime;
-}
-
-table.t1 tr:not(:nth-last-child(-n+4)) {
-  background-color: lime;
-}
-
-table.t2 td:not(:nth-last-child(3n+1)) {
-  background-color: lime;
-}
-
-table.t1 td, table.t2 td {
-  border: thin black solid;
-}
-
-/*# sourceMappingURL=style48.css.map */

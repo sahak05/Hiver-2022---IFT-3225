@@ -1,8 +1,8 @@
-div.stub > * {
+p.test a {
   background-color: red;
 }
 
-div.stub *:not(:visited) {
+p.test *:link {
   background-color: lime;
 }
 

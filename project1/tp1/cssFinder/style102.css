@@ -1,9 +1,9 @@
-p::first-letter {
-  background-color: red;
+#foo {
+  background-color: lime;
 }
 
-p:first-letter {
-  background-color: lime;
+p {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style102.css.map */

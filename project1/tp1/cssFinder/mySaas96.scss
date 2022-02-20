@@ -1,2 +1,1 @@
-p { background-color : red }
-p[title*="bar"] { background-color : lime }
+p:first-line { background-color : lime }

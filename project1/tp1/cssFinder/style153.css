@@ -1,9 +1,21 @@
-html {
+p {
   background-color: red;
 }
 
-*:root {
+p[lang|=en] {
   background-color: lime;
+}
+
+address {
+  background-color: red;
+}
+
+address[lang=fi] {
+  background-color: lime;
+}
+
+span[lang|=fr] {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style153.css.map */

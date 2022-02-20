@@ -1,13 +1,9 @@
-.green {
-  background-color: lime;
+p {
+  background: lime;
 }
 
-.white {
-  background-color: transparent !important;
-}
-
-div.stub > p + p {
-  background-color: red;
+p {
+  background: red;
 }
 
 /*# sourceMappingURL=style18.css.map */

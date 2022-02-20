@@ -1,5 +1,2 @@
-
-p { color: green; }
-..test { background: red; color: yellow; }
-.foo..quux { background: red; color: yellow; }
-.bar. { background: red; color: yellow; }
+p { background-color: navy; color: white; }
+p:not(:target) { background-color: white; color: black; }

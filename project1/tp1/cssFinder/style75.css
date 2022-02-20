@@ -1,9 +1,9 @@
 p {
-  background-color: red;
+  background-color: lime;
 }
 
-p[title^=foo] {
-  background-color: lime;
+p:target {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style75.css.map */

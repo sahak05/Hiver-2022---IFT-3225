@@ -1,4 +1,4 @@
-button { background-color : red }
-input { background-color : red }
-button:disabled { background-color : lime }
-input:disabled { background-color : lime }
+.green { background-color : lime ! important }
+.t1 td:not(:last-child) { background-color : red }
+p > *:not(:last-child) { background-color : red }
+table.t1 td { border : thin black solid }

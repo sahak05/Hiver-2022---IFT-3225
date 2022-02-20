@@ -1,17 +1,11 @@
-button {
+span:after {
   background-color: red;
+  content: "FAILED";
 }
 
-input {
-  background-color: red;
-}
-
-button:not(:disabled) {
+span::after {
   background-color: lime;
-}
-
-input:not(:disabled) {
-  background-color: lime;
+  content: "PASSED";
 }
 
 /*# sourceMappingURL=style40.css.map */

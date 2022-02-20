@@ -1,31 +1,31 @@
 p {
-  background: red;
-  color: yellow;
-}
-
-p.t1.t2 {
   background: green;
   color: white;
+}
+
+p:not(.t1):not(.t2) {
+  background: red;
+  color: yellow;
 }
 
 div {
-  background: green;
-  color: white;
-}
-
-div.t1 {
   background: red;
   color: yellow;
+}
+
+div:not(.t1) {
+  background: green;
+  color: white;
 }
 
 address {
-  background: red;
-  color: yellow;
-}
-
-address.t5.t5 {
   background: green;
   color: white;
+}
+
+address:not(.t5):not(.t5) {
+  background: red;
+  color: yellow;
 }
 
 /*# sourceMappingURL=style13.css.map */

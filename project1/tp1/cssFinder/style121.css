@@ -1,6 +1,9 @@
-p:selection {
-  color: yellow;
-  background: red;
+div.stub > * {
+  color: red;
+}
+
+div.stub *:not([title*=" on"]) {
+  color: lime;
 }
 
 /*# sourceMappingURL=style121.css.map */

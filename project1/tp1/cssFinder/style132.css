@@ -1,9 +1,9 @@
-p {
-  color: lime;
+div.stub * {
+  background-color: red;
 }
 
-p[class^=""] {
-  color: red;
+div.stub *:not(:lang(fr)) {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style132.css.map */

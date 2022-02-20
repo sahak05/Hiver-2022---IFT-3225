@@ -1,13 +1,9 @@
-.red {
-  background-color: red;
+p {
+  color: green !important;
 }
 
-.t1 td:last-child {
-  background-color: lime;
-}
-
-p > *:last-child {
-  background-color: lime;
+blockquote + div p {
+  color: red;
 }
 
 /*# sourceMappingURL=style164.css.map */

@@ -1,13 +1,31 @@
-.white {
-  background-color: transparent !important;
+p {
+  background: red;
+  color: yellow;
 }
 
-.green {
-  background-color: lime;
+p.t1.t2 {
+  background: green;
+  color: white;
 }
 
-div.t1 p {
-  background-color: red;
+div {
+  background: green;
+  color: white;
+}
+
+div.t1 {
+  background: red;
+  color: yellow;
+}
+
+address {
+  background: red;
+  color: yellow;
+}
+
+address.t5.t5 {
+  background: green;
+  color: white;
 }
 
 /*# sourceMappingURL=style11.css.map */

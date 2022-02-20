@@ -1,9 +1,9 @@
 p {
-  background-color: red;
+  background: lime;
 }
 
-p[title] {
-  background-color: lime;
+.one.word {
+  background: red;
 }
 
 /*# sourceMappingURL=style22.css.map */
