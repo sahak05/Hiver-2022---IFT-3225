@@ -16,6 +16,7 @@ mkdir -p $2
 
 for i in $1/*
 do
+	#echo $i
     ./transf.sh "$i"
 done
 
