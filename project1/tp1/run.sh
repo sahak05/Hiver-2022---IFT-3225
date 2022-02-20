@@ -21,10 +21,12 @@ done
 
 for j in Solution*
 do
+	chmod og+r $j
 	mv $j $2
 done
 
 for j in noSolution*
 do
+	chmod og+r $j
 	mv $j $2
 done
