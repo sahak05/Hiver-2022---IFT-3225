@@ -1,9 +1,0 @@
-p {
-  color: lime;
-}
-
-p[class^=""] {
-  color: red;
-}
-
-/*# sourceMappingURL=style62.css.map */

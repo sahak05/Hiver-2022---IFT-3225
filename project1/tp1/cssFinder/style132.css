@@ -1,9 +1,0 @@
-div.stub * {
-  background-color: red;
-}
-
-div.stub *:not(:lang(fr)) {
-  background-color: green;
-}
-
-/*# sourceMappingURL=style132.css.map */

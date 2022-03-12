@@ -1,9 +1,0 @@
-p {
-  color: red;
-}
-
-p:not([class^=""]) {
-  color: lime;
-}
-
-/*# sourceMappingURL=style65.css.map */

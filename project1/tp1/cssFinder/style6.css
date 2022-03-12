@@ -1,9 +1,0 @@
-div :not(:enabled):not(:disabled) {
-  background: lime;
-}
-
-p {
-  background: red;
-}
-
-/*# sourceMappingURL=style6.css.map */

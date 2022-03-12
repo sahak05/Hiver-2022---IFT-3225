@@ -1,9 +1,0 @@
-p {
-  background-color: red;
-}
-
-p[title^=foo] {
-  background-color: lime;
-}
-
-/*# sourceMappingURL=style166.css.map */

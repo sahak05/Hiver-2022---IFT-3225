@@ -1,9 +1,0 @@
-p {
-  background-color: red;
-}
-
-p[title$=bar] {
-  background-color: lime;
-}
-
-/*# sourceMappingURL=style2.css.map */

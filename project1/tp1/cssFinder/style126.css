@@ -1,9 +1,0 @@
-div.stub > * {
-  background-color: red;
-}
-
-div.stub *:not(:visited) {
-  background-color: lime;
-}
-
-/*# sourceMappingURL=style126.css.map */

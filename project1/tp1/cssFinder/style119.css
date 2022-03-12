@@ -1,9 +1,0 @@
-div.stub > * {
-  color: red;
-}
-
-div.stub *:not([title^="si on"]) {
-  color: lime;
-}
-
-/*# sourceMappingURL=style119.css.map */
