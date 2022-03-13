@@ -55,25 +55,27 @@
     </tr>
   </tbody>
 </table>
+
 <br><br><br>
-  </div>
+<div class="container" id="table2"></div>
+</div>
 
 
   <div class="text-center pt-4" id="interfaceConsultation" style="display: none;">
     <!--les inputs de recherches-->
     <div>
-
+      <p>Respectez les formes dans les inputs!!!</p>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="concepts">Concept</span>
+        <span class="input-group-text" >Concept</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="concepts">
+      <input type="text" class="form-control" id="concepts" value="/c/fr/dentiste" aria-label="Default" aria-describedby="concepts">
     </div>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="relations">Relations</span>
+        <span class="input-group-text" >Relations</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="relations">
+      <input type="text" class="form-control" id="relations" aria-label="Default" value="/r/RelatedTo" aria-describedby="relations">
     </div>
     <button class="btn btn-outline-danger" tye="button "id="submit">Rechercher</button>
     </div>
@@ -82,9 +84,9 @@
     <br><br><br>
     <button class="btn btn-secondary mx-5" id="prev">prev</button>
     <button class="btn btn-secondary mx-5"  id="suiv">suiv</button>
-
+    <br><br><br>
     <!---Tableau resultat-->
-    <div class="table text-center  table-danger table-striped" id="resultatSubmit"></div>
+    <div class="text-center" id="resultatSubmit"></div>
   </div>
   <div id="interfaceJeux" style="display:none;">
   <nav class="navbar navbar-light">
