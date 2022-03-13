@@ -14,6 +14,7 @@ $(document).ready(function(){
         $("#interfaceConsultation").hide();
         $("#concept").hide();
         $("#interfaceJeux").show();
+        $("#recherche").hide();
       
     });
 
@@ -25,10 +26,12 @@ $(document).ready(function(){
         $("#interfaceJeux").hide();
         
     });
+
   
 
 	showTable()//affiche table
-	compter_element() //compte nos elements 
+
+	
 
    
 
@@ -40,7 +43,8 @@ const concepts = new Set()
 let showTable = ()=>{ //afficher la table du json
 	const debutTable = $("<table>")
 	const finTable = $("</table>")
-	debutTable.addClass("table text-center")
+	debutTable.addClass("table text-center  table-info table-striped")
+	debutTable.attr("id","tablefait")
 	const thead = $("<thead>")
 	thead.addClass("thead-dark")
 	let tr = $("<tr>")
@@ -62,25 +66,19 @@ let showTable = ()=>{ //afficher la table du json
 			debutTable.append(tr1)
 			
 
-			//compter le reste
-			concepts.add(i['start']['@id'])
-			concepts.add(i['end']['@id'])
-			relations.add(i['rel']['@id'])
-			
 		})
-
-		//compter le nombre de faits 
-		$("#nfm").text(data.faits.length)
-		$("#ncd").text(concepts.size)
-		$("#nrd").text(relations.size)
+	
 		
 		
 	})
 	
 	$('#table').append(debutTable)
-}
 
-let compter_element = ()=>{
-	$()
+		
+
+   
+
+
+	
 }
 
