@@ -26,9 +26,12 @@ $(document).ready(function(){
         $("#interfaceJeux").hide();
         
     });
+
   
 
 	showTable()
+
+	
 
    
 
@@ -39,7 +42,8 @@ $(document).ready(function(){
 let showTable = ()=>{
 	const debutTable = $("<table>")
 	const finTable = $("</table>")
-	debutTable.addClass("table text-center")
+	debutTable.addClass("table text-center  table-info table-striped")
+	debutTable.attr("id","tablefait")
 	const thead = $("<thead>")
 	thead.addClass("thead-dark")
 	let tr = $("<tr>")
@@ -83,5 +87,13 @@ let showTable = ()=>{
 		}
 	});*/
 	$('#table').append(debutTable)
+
+		
+
+   
+
+
+	
 }
+
 
