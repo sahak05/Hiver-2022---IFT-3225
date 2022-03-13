@@ -27,14 +27,11 @@ $(document).ready(function(){
         
     });
 
-  
-
 	showTable()//affiche table
 
+
 	
-
    
-
 
 });
 const relations = new Set()
@@ -90,4 +87,6 @@ let showTable = ()=>{ //afficher la table du json
 
 	
 }
+
+
 
