@@ -4,6 +4,8 @@ $(document).ready(function(){
         $("#table").hide();
         $("#interfaceConsultation").show();
         $("#concept").show();
+        $("#interfaceJeux").hide();
+        
     });
 
 
@@ -11,6 +13,8 @@ $(document).ready(function(){
         $("#table").hide();
         $("#interfaceConsultation").hide();
         $("#concept").hide();
+        $("#interfaceJeux").show();
+      
     });
 
 
@@ -18,9 +22,15 @@ $(document).ready(function(){
         $("#table").show();
         $("#interfaceConsultation").hide();
         $("#concept").hide();
+        $("#interfaceJeux").hide();
+        
     });
+  
 
-     
+
+
+   
 
 
 });
+
