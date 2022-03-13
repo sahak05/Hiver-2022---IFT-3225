@@ -49,19 +49,20 @@ let showTable = ()=>{
 	thead.append(tr)
 	debutTable.append(thead) //tete du tableau
 	
-	/*$.getJSON("json_dataJ", function(data){
-		$.each(data.faits, function(i){
-			>
-			$.each(i, function(key, value){
-				let tr1 = $("<tr>")
-				let tr2 = tr1.append($("<td>").text(value['start']['label']))
-				let tr3 = tr1.append($("<td>").text(value['rel']['label']))
-				let tr4 = tr1.append($("<td>").text(value['end']['label']))
-				debutTable.append(tr1)
-			})
+	$.getJSON("json_dataJ.json", function(data){
+		$.each(data.faits, function(index,i){
+			//console.log(i)
+			
+			let tr1 = $("<tr>")
+			
+			tr1.append($("<td>").text(i['start'].label))
+			tr1.append($("<td>").text(i['rel'].label))
+			tr1.append($("<td>").text(i['end'].label))
+			debutTable.append(tr1)
+		
 			
 		})
-	})*/
+	})
 	
 	
 	/*$.ajax({
@@ -72,9 +73,9 @@ let showTable = ()=>{
 			
 				$.each(i, function(key, value){
 					let tr1 = $("<tr>")
-					let tr2 = tr1.append($("<td>").text(value['start']['label']))
-					let tr3 = tr1.append($("<td>").text(value['rel']['label']))
-					let tr4 = tr1.append($("<td>").text(value['end']['label']))
+					tr1.append($("<td>").text(value['start']['label']))
+					tr1.append($("<td>").text(value['rel']['label']))
+					tr1.append($("<td>").text(value['end']['label']))
 					debutTable.append(tr1)
 				})
 				
