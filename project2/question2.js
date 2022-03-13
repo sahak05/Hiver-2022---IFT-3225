@@ -27,15 +27,17 @@ $(document).ready(function(){
     });
   
 
-	showTable()
+	showTable()//affiche table
+	compter_element() //compte nos elements 
 
    
 
 
 });
+const relations = new Set()
+const concepts = new Set()
 
-
-let showTable = ()=>{
+let showTable = ()=>{ //afficher la table du json
 	const debutTable = $("<table>")
 	const finTable = $("</table>")
 	debutTable.addClass("table text-center")
@@ -58,29 +60,27 @@ let showTable = ()=>{
 			tr1.append($("<td>").text(i['rel'].label))
 			tr1.append($("<td>").text(i['end'].label))
 			debutTable.append(tr1)
-		
+			
+
+			//compter le reste
+			concepts.add(i['start']['@id'])
+			concepts.add(i['end']['@id'])
+			relations.add(i['rel']['@id'])
 			
 		})
+
+		//compter le nombre de faits 
+		$("#nfm").text(data.faits.length)
+		$("#ncd").text(concepts.size)
+		$("#nrd").text(relations.size)
+		
+		
 	})
 	
-	
-	/*$.ajax({
-		type:"GET",
-		url:"json_dataJ.json",
-		success:function(data){
-			$.each(data.faits, function(i){
-			
-				$.each(i, function(key, value){
-					let tr1 = $("<tr>")
-					tr1.append($("<td>").text(value['start']['label']))
-					tr1.append($("<td>").text(value['rel']['label']))
-					tr1.append($("<td>").text(value['end']['label']))
-					debutTable.append(tr1)
-				})
-				
-			})	
-		}
-	});*/
 	$('#table').append(debutTable)
+}
+
+let compter_element = ()=>{
+	$()
 }
 
