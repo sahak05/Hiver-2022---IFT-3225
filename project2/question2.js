@@ -66,8 +66,17 @@ let showTable = ()=>{ //afficher la table du json
 			debutTable.append(tr1)
 			
 
-		})
-	
+		//compter le reste
+		concepts.add(i['start']['@id'])
+		concepts.add(i['end']['@id'])
+		relations.add(i['rel']['@id'])
+		
+	})
+
+	//compter le nombre de faits 
+	$("#nfm").text(data.faits.length)
+	$("#ncd").text(concepts.size)
+	$("#nrd").text(relations.size)
 		
 		
 	})
