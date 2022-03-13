@@ -12,9 +12,6 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
   <script type="text/javascript" src="question2.js"> </script>
   
-  <style>
-   li,p { background-color : lime }
-  </style>
  </head>
  <body>
   <div class="jumbotron mb-5">
@@ -60,16 +57,34 @@
 </table>
 <br><br><br>
   </div>
-  <div class="container pt-4" id="concept" style="display:none;">
-    
-  </div>
+
+
   <div class="text-center pt-4" id="interfaceConsultation" style="display: none;">
-     <button class="btn btn-secondary mx-5" id="prev">
-     prev
-    </button>
-    <button class="btn btn-secondary mx-5"  id="suiv">
-     suiv
-    </button>
+    <!--les inputs de recherches-->
+    <div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="concepts">Concept</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="concepts">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="relations">Relations</span>
+      </div>
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="relations">
+    </div>
+    <button class="btn btn-outline-danger" tye="button "id="submit">Rechercher</button>
+    </div>
+    
+
+    <br><br><br>
+    <button class="btn btn-secondary mx-5" id="prev">prev</button>
+    <button class="btn btn-secondary mx-5"  id="suiv">suiv</button>
+
+    <!---Tableau resultat-->>
+    <div class="table text-center  table-danger table-striped" id="resultatSubmit"></div>
   </div>
   <div id="interfaceJeux" style="display:none;">
   <nav class="navbar navbar-light">
