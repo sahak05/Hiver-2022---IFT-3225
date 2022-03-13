@@ -27,14 +27,15 @@ $(document).ready(function(){
         
     });
 
-  
-
 	showTable()//affiche table
+<<<<<<< HEAD
 	recherche()
+=======
+
+
+>>>>>>> 5cabab0f5fe4d00e63f39b76a081418c37c53909
 	
-
    
-
 
 });
 const relations = new Set()
@@ -85,6 +86,7 @@ let showTable = ()=>{ //afficher la table du json
 }
 
 
+<<<<<<< HEAD
 const recherche=()=>{
 
 	$('#submit').click(function(){ //apres le click dans l'interface consultation
@@ -228,3 +230,6 @@ const ajoutTable = (table)=>{
 	$("#ncd").text(concepts.size)
 	$("#nrd").text(relations.size)
 }
+=======
+
+>>>>>>> 5cabab0f5fe4d00e63f39b76a081418c37c53909
