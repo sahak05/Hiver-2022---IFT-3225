@@ -14,6 +14,7 @@ $(document).ready(function(){
         $("#interfaceConsultation").hide();
         $("#concept").hide();
         $("#interfaceJeux").show();
+        $("#recherche").hide();
       
     });
 
