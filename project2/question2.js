@@ -29,6 +29,8 @@ $(document).ready(function(){
 
 	showTable()//affiche table
 
+	$("#prev").attr("disabled", true);
+	$("#suiv").attr("disabled", true);
 	recherche()
 
 
@@ -52,7 +54,7 @@ let showTable = ()=>{ //afficher la table du json
 	
 	$.getJSON("json_dataJ.json", function(data){
 		$.each(data.faits, function(index,i){
-			console.log(data.faits.length)
+			//console.log(data.faits.length)
 			
 			let tr1 = $("<tr>")
 			
@@ -123,7 +125,7 @@ const recherche_sous = (url)=>{
 			url:url,
 			success: function(data){
 				//console.log(data)
-				console.log('here data', data)
+				//.log('here data', data)
 				$.each(data.edges, function(index, value){
 					let arrayJson = {"start": "", "end":"", "rel":""}
 					//console.log(value)
@@ -137,7 +139,7 @@ const recherche_sous = (url)=>{
 						tableau.push(arrayJson)
 					}
 				})
-				console.log(tableau)
+				//.log(tableau)
 
 				/**
 				 * fusionner les tableaux
@@ -184,19 +186,28 @@ const recherche_sous = (url)=>{
 
 				if(data.view){
 					if(data.view['firstPage']){
+						$("#prev").attr("disabled", false);
 						console.log("you smart")
 						$("#prev").click(function(e){
 							e.preventDefault();
 							recherche_sous('https://api.conceptnet.io'+data.view.firstPage);
 						})
+					}else{
+						$("#prev").attr("disabled", true);
 					}
 
 					if(data.view.nextPage){
+						$("#suiv").attr("disabled", false);
 						$("#suiv").click(function(e){
 							e.preventDefault();
 							recherche_sous('https://api.conceptnet.io'+data.view.nextPage);
 						})
+					}else{
+						$("#suiv").attr("disabled", true);
 					}
+				}else{
+					$("#prev").attr("disabled", true);
+					$("#prev").attr("disabled", true);
 				}
 			}
 		})

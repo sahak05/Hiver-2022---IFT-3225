@@ -12,6 +12,7 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
   <script type="text/javascript" src="question2.js"> </script>
   <script type="text/javascript" src="jeux.js"> </script>
+  <script type="text/javascript" src="consigne.js"> </script>
   
  </head>
  <body>
@@ -108,6 +109,36 @@
     <h1 class="text-center p-5 mt-4">Oui-Non</h1>
     <div id="questionnaire">
     </div>
+  </div>
+
+  <br><br>
+
+  <div class="text-center" id="interfaceConsigne" style="display:none;">
+    <h1 class="text-center p-5 mt-4">Consigne</h1>
+    <p id="consigne"></p><br>
+    <!--<div class="input-group mb-3">
+      <input type="text" class="form-control" aria-describedby="basic-addon1">
+    </div>-->
+    <button class="btn btn-info" tye="button "id="demarrer">Demarrer</button>
+    <br><br>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" " value="Vos reponses ici">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label type="text" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="resultC" placeholder="resultats">
+        </div><br><br>
+        <button class="btn btn-outline-info" tye="button "id="put">Verifier</button>
+      </div>
+    
+
+
+
+
+    <div id="resultatConsigne"></div>
   </div>
   </div>
   <br/>
