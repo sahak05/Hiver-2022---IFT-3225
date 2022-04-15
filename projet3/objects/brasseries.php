@@ -23,7 +23,7 @@ class Brasseries{
 	public $region;
 	public $permis;
 	public $brassePermis;
-	public $typePermis,
+	public $typePermis;
 	public $ambq_membre;	
 	public $annee;
 	public $site;
@@ -44,7 +44,7 @@ class Brasseries{
 
 
 	//constructor with $db as database connection
-	public __construct($db){
+	public function __construct($db){
 		$this->conn = $db;
 	}
 
@@ -53,7 +53,8 @@ class Brasseries{
 	function read(){
 		//select all queries
 
-		$query = "SELECT * FROM " . $this->table_name;
+		$query = "SELECT nom, appellationLegale, province, pays,
+		telephone, site FROM " . $this->table_name;
 
 		//prepare the query statement
 		$stmt = $this->conn->prepare($query);
@@ -134,7 +135,7 @@ class Brasseries{
 	    $stmt->bindParam(':annee', $this->annee);
 	    $stmt->bindParam(':site', $this->site);
 	    $stmt->bindParam(':courriel', $this->courriel);
-	    $stmt->bindParam(':telephone', $this->telephone;
+	    $stmt->bindParam(':telephone', $this->telephone);
 	    $stmt->bindParam(':facebook', $this->facebook);
 	    $stmt->bindParam(':ratebeer', $this->ratebeer);
 	    $stmt->bindParam(':untappd', $this->untappd);
@@ -161,7 +162,7 @@ class Brasseries{
 	function allnames(){
 
 		//query to read all names 
-		$query = "SELECT nom FROM " . $table_name;
+		$query = "SELECT nom FROM " . $this->table_name;
 
 
 		//prepare the query statement
@@ -169,35 +170,30 @@ class Brasseries{
       	$stmt = $this->conn->prepare( $query );
   
       	// execute query
-   		$stmt->execute();
+	    $stmt->execute();
       
-      	// get retrieved row
-      	$row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-      	// set values to object properties
-      	$this->nom = $row['nom'];
-
+      	return $stmt;
 	}
 
 
-	function namesLike(){
+	function namesLike($prefix){
 
-		$query = "SELECT nom FROM " . $table_name . "WHERE nom LIKE '" . $prefix . "%'";
+		$query = "SELECT nom FROM " . $this->table_name . "WHERE nom LIKE ?";
 
 		// prepare query statement
       	$stmt = $this->conn->prepare( $query );
       
-      	// bind id of product to be updated
-      	$stmt->bindParam(1, $this->id);
+      	// sanitize
+      	$prefix=htmlspecialchars(strip_tags($prefix));
+      	$keywords = "{$prefix}%";
       
-      	// execute query
-      	$stmt->execute();
+      // bind
+      $stmt->bindParam(2, $prefix);
+
+      // execute query
+      $stmt->execute();
       
-      	// get retrieved row
-      	$row = $stmt->fetch(PDO::FETCH_ASSOC);
-      
-      	// set values to object properties
-      	$this->name = $row['name'];
+      return $stmt;
 	}
 
 
