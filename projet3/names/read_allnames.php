@@ -30,7 +30,7 @@ $stmt = $brasseries->allnames();
 
 // create array
 $brasseries_arr = array();
-
+$brasseries_arr["records"]=array();
 
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
@@ -39,12 +39,11 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
     // just $name only
     extract($row);
  
-    array_push($brasseries_arr, $nom);
+    array_push($brasseries_arr["records"], $nom);
 }
 
 
-// make it json format
-print_r(json_encode($brasseries_arr));
+echo json_encode($brasseries_arr);
 
 
 

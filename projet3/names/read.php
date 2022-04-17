@@ -42,7 +42,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
     $brasseries_item=array(
         "nom" => $nom,
-        "appelationnLegale" => $appelationnLegale,
+        "appellationLegale" => $appellationLegale,
         "province" => $province,
         "pays" => $pays,
         "telephone" => $telephone,

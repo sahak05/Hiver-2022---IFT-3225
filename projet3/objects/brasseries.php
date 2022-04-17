@@ -158,7 +158,7 @@ class Brasseries{
 
 
 	//tout les noms
-
+	// GET <MICRO>/NAMES
 	function allnames(){
 
 		//query to read all names 
@@ -176,19 +176,20 @@ class Brasseries{
 	}
 
 
+	// GET <MICRO>/NAMES/<prefix>
 	function namesLike($prefix){
 
-		$query = "SELECT nom FROM " . $this->table_name . "WHERE nom LIKE ?";
+		$query = "SELECT nom FROM " . $this->table_name . " WHERE nom LIKE ?";
 
 		// prepare query statement
       	$stmt = $this->conn->prepare( $query );
       
       	// sanitize
       	$prefix=htmlspecialchars(strip_tags($prefix));
-      	$keywords = "{$prefix}%";
+      	$prefix = "{$prefix}%";
       
       // bind
-      $stmt->bindParam(2, $prefix);
+      $stmt->bindParam(1, $prefix);
 
       // execute query
       $stmt->execute();
@@ -218,11 +219,7 @@ class Brasseries{
 		}
 
 		return false;
-
 	}
-
-
-
 
 }
 
