@@ -16,7 +16,7 @@ function showBrasseries(){
  	
 	$.ajax({
     type: 'GET',
-    url: "http://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/read.php",
+    url: "https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/read.php",
     async: false,
     dataType: "json",
     success: function(data) {
