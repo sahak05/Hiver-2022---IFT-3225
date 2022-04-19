@@ -1,5 +1,10 @@
 <?php
 
+
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+
 	// required headers
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
@@ -9,8 +14,8 @@
 
 
 	// include database and object file
-	include_once '../config/database.php';
-	include_once '../objects/brasseries.php';
+	include_once 'config/database.php';
+	include_once 'objects/brasseries.php';
 
 
 	// get database connection
@@ -21,17 +26,17 @@
 	$brasseries = new Brasseries($db);
 
 	// get product name
-	$data = json_decode(file_get_contents("php://input"));
+	$data = isset($_GET['input']) ? $_GET['input'] : die();
 
 	// set product name to be deleted
-	$brasseries->nom = $data->nom;
+	$brasseries->nom = $data;
 
 	// delete the product
 	if($brasseries->delete()){
 		// set response code - 200 ok
 		http_response_code(200);
 		// tell the user
-		echo json_encode(array("message" => "Product was deleted."));
+		echo json_encode(array("message" => "Brasseries was deleted."));
 	}
 
 	// if unable to delete the product
@@ -39,7 +44,7 @@
 		// set response code - 503 service unavailable
 		http_response_code(503);
 		// tell the user
-		echo json_encode(array("message" => "Unable to delete product."));
+		echo json_encode(array("message" => "Unable to delete brasseries."));
 	}
 
 ?>

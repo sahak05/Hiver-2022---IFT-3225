@@ -2,6 +2,9 @@
 
 <?php
 
+
+//ICI NOUS AVONS LE CODE QUI FAIR LES DEUX PREMIERES REQUETES GET DU TP AVEC ET SANS PREFIX
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -27,10 +30,9 @@ $db = $database->getConnection();
 $brasseries = new Brasseries($db);
 
 
-$prefix = isset($_GET['prefix']) ? $_GET['prefix'] : die();
+$prefix = isset($_GET['prefix']) ? $_GET['prefix'] : "";
 
 $stmt = $brasseries->namesLike($prefix);
-
 
 //check if more than 0 record found 
 
