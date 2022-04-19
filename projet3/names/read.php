@@ -41,12 +41,37 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
 
     $brasseries_item=array(
-        "nom" => $nom,
-        "appellationLegale" => $appellationLegale,
-        "province" => $province,
-        "pays" => $pays,
-        "telephone" => $telephone,
-        "site" => $site
+        "nom" =>   $nom,
+        "appellationLegale" =>  $appellationLegale,
+        "autreAppellation" =>  $autreAppellation,
+        "adresse" =>  $adresse,
+        "ville" =>  $ville, 
+        "code_postal" =>  $code_postal,
+        "province" =>  $province,
+        "pays" =>  $pays,
+        "latitude" =>  $latitude,
+        "longitude" =>  $longitude,
+        "region" =>  $region,
+        "brassePermis" =>  $brassePermis,
+        "typePermis" =>   $typePermis,
+        "permis" => $permis,
+        "ambq_membre" =>  $ambq_membre,
+        "annee" =>  $annee,
+        "site" =>  $site,
+        "courriel" =>  $courriel,
+        "telephone" =>  $telephone,
+        "facebook" =>  $facebook,
+        "ratebeer" =>  $ratebeer,
+        "untappd" =>  $untappd,
+        "auMenu" =>  $auMenu,
+        "twitter" =>  $twitter,
+        "wikidata" =>  $wikidata,
+        "youtube" =>   $youtube,
+        "instagram" =>  $instagram,
+        "pinterest" =>  $pinterest,
+        "snapchat" => $snapchat,
+        "autre" =>  $autre,
+        "notes" =>  $notes
     );
  
     array_push($brasseries_arr["records"], $brasseries_item);
