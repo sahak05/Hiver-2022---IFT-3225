@@ -41,7 +41,7 @@ function checkRegister(user, password){
 
     if(enreg["account_name"]){
     	sessionStorage.setItem('user', enreg["account_name"])
-    	sessionStorage.setItem('privilege', enreg["account_right"])
+    	sessionStorage.setItem('droits', enreg["account_right"])
     	
     	let confirmation = "Connexion reussie "+ enreg['account_name']
     	alert (confirmation)

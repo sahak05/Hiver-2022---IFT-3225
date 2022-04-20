@@ -35,7 +35,7 @@ function readProductsTemplate(data, keywords){
     read_products_html+="<th class='w-10-pct'>Permis</th>";
     read_products_html+="<th class='w-5-pct'>Membre AMBQ</th>";
     read_products_html+="<th class='w-5-pct'>Année</th>";
-    read_products_html+="<th class='w-30-pct text-align-center'>Action</th>";
+    read_products_html+="<th class='w-30-pct text-align-center'>Actions</th>";
     read_products_html+="</tr>";
     
     // loop through returned list of data

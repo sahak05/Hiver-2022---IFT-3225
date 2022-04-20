@@ -1,7 +1,13 @@
 $(document).ready(function(){
  
-    // show list of product on first load
-    showBrasseries();
+    $("#Table").click(function(){
+        $("#div_login").hide();
+        $("#app").show();
+
+        if(sessionStorage.getItem('droits')){
+            showBrasseries();
+        }
+    });
     
     // when a 'read products' button was clicked
     $(document).on('click', '.read-products-button', function(){
