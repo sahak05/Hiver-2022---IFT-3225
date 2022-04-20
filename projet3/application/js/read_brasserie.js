@@ -25,16 +25,7 @@ function showBrasseries(){
         /*$(document).ready( function () {
         	$('.table').DataTable();
 		} );*/
-		$(document).ready( function () {
-			$('.table').DataTable( {
-				dom: 'lrtip',
-    			language: {
-    				url:'api/names/read.php'
-    			},
-    		
-    			
-    		} );
-		} );
+		
  
         // chage page title
         changePageTitle("Read Brasseries");

@@ -28,14 +28,14 @@ function readProductsTemplate(data, keywords){
     
     // creating our table heading
     read_products_html+="<tr>";
-    read_products_html+="<th class='w-20-pct'>Nom</th>";
+    read_products_html+="<th class='w-10-pct'>Nom</th>";
     read_products_html+="<th class='w-10-pct'>Appelation Légale</th>";
     read_products_html+="<th class='w-10-pct'>Adresse</th>";
     read_products_html+="<th class='w-10-pct'>Pays</th>";
     read_products_html+="<th class='w-10-pct'>Permis</th>";
-    read_products_html+="<th class='w-10-pct'>Membre AMBQ</th>";
-    read_products_html+="<th class='w-10-pct'>Année</th>";
-    read_products_html+="<th class='w-20-pct text-align-center'>Action</th>";
+    read_products_html+="<th class='w-5-pct'>Membre AMBQ</th>";
+    read_products_html+="<th class='w-5-pct'>Année</th>";
+    read_products_html+="<th class='w-30-pct text-align-center'>Action</th>";
     read_products_html+="</tr>";
     
     // loop through returned list of data
@@ -45,10 +45,11 @@ function readProductsTemplate(data, keywords){
         read_products_html+="<tr>";
 	
         read_products_html+="<td>" + val.nom + "</td>";
-        read_products_html+="<td>$" + val.appellationLegale + "</td>";
+        read_products_html+="<td>" + val.appellationLegale + "</td>";
         read_products_html+="<td>" + val.adresse + "</td>";
         read_products_html+="<td>" + val.pays + "</td>";
-        read_products_html+="<td>$" + val.ambq_membre + "</td>";
+        read_products_html+="<td>" + val.permis + "</td>";
+        read_products_html+="<td>" + val.ambq_membre + "</td>";
         read_products_html+="<td>" + val.annee + "</td>";
 
 	
