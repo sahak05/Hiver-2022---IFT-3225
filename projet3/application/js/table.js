@@ -52,11 +52,10 @@ function readProductsTemplate(data, keywords){
         read_products_html+="<td>" + val.ambq_membre + "</td>";
         read_products_html+="<td>" + val.annee + "</td>";
 
-	
         // 'action' buttons
         read_products_html+="<td>";
         // read product button
-        read_products_html+="<button class='btn btn-primary m-r-10px read-one-product-button' data-nom='" + val.nom + "'>";
+        read_products_html+="<button class='btn btn-primary m-r-10px read-one-product-button' data-permis='" + val.permis + "'>";
         read_products_html+="<span class='glyphicon glyphicon-eye-open'></span> Read";
         read_products_html+="</button>";
 	

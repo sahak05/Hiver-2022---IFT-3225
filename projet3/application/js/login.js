@@ -11,7 +11,7 @@ $(document).ready(function(){
     	event.preventDefault();
     	var user = $("#name").val();
     	var password = $('input[type="password"]').val();
-
+console.log(password);
     	
     	checkRegister(user, password)
 

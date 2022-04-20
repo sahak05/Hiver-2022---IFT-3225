@@ -31,6 +31,7 @@ $brasseries = new Brasseries($db);
 
 
 $prefix = isset($_GET['prefix']) ? $_GET['prefix'] : "";
+echo $prefix;
 
 $stmt = $brasseries->namesLike($prefix);
 

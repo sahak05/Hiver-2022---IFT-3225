@@ -27,6 +27,8 @@
 
 	// get product name
 	$data = isset($_GET['input']) ? $_GET['input'] : die();
+	$data = str_replace('_', ' ', $data);
+
 
 	// set product name to be deleted
 	$brasseries->nom = $data;
