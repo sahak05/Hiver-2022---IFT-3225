@@ -19,19 +19,19 @@ $(document).ready(function(){
 
 // function to show list of products
 function showBrasseries(){
- 	
-	$.ajax({
+    
+    $.ajax({
     type: 'GET',
     url: "https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/read.php",
     async: false,
     dataType: "json",
     success: function(data) {
-   		// html for listing products
+        // html for listing products
         readProductsTemplate(data, "");
         /*$(document).ready( function () {
-        	$('.table').DataTable();
-		} );*/
-		
+            $('.table').DataTable();
+        } );*/
+        
  
         // chage page title
         changePageTitle("Read Brasseries");
@@ -43,6 +43,8 @@ function showBrasseries(){
     });
 
 };
+
+
 
 
 /*

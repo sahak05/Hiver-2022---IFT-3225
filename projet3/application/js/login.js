@@ -15,12 +15,17 @@ $(document).ready(function(){
     	
     	checkRegister(user, password)
 
+
     	$("#name").val(null);
     	$('input[type="password"]').val(null)
     });
 
     $("#Table").click(function(){
     	$("#div_login").hide();
+        $("#app").show();
+    });
+    $("#Plot").click(function(){
+        $("#div_login").hide();
         $("#app").show();
     });
 
