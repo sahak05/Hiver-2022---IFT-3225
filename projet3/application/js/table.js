@@ -24,7 +24,7 @@ function readProductsTemplate(data, keywords){
     read_products_html+="</div>";
     
     // start table
-    read_products_html+="<table class='table table-bordered table-hover'>";
+    read_products_html+="<table class='table table-bordered table-hover table table-striped'>";
     
     // creating our table heading
     read_products_html+="<tr>";

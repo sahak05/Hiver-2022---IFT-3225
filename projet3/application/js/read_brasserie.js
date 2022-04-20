@@ -22,6 +22,19 @@ function showBrasseries(){
     success: function(data) {
    		// html for listing products
         readProductsTemplate(data, "");
+        /*$(document).ready( function () {
+        	$('.table').DataTable();
+		} );*/
+		$(document).ready( function () {
+			$('.table').DataTable( {
+				dom: 'lrtip',
+    			language: {
+    				url:'api/names/read.php'
+    			},
+    		
+    			
+    		} );
+		} );
  
         // chage page title
         changePageTitle("Read Brasseries");
@@ -33,6 +46,7 @@ function showBrasseries(){
     });
 
 };
+
 
 /*
 // function to show list of products
