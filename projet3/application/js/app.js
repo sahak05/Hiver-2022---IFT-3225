@@ -6,7 +6,8 @@ $(document).ready(function(){
     app_html+="<div class='container'>";
  
     app_html+="<div class='page-header'>";
-    app_html+="<h2 id='page-title'>Rien a voir pour le moment... Connectez-vous!!!</h2>";
+    app_html+="<h2 id='page-title'>Rien a voir pour le moment... Connectez-vous!!! </h2>";
+    
     app_html+="</div>";
     
     // this is where the contents will be shown.

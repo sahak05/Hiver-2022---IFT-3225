@@ -3,29 +3,29 @@
 $(document).ready(function(){     
 
     $("#Login").click(function(){
-    	$("#div_login").show();
+        $("#div_login").show();
+        document.getElementById("viz").innerHTML = ""; 
         $("#app").hide();
     });
 
     $("#btn-login").click(function(event){
-    	event.preventDefault();
-    	var user = $("#name").val();
-    	var password = $('input[type="password"]').val();
+        event.preventDefault();
+        var user = $("#name").val();
+        var password = $('input[type="password"]').val();
+console.log(password);
+        
+        checkRegister(user, password)
 
-    	
-    	checkRegister(user, password)
-
-
-    	$("#name").val(null);
-    	$('input[type="password"]').val(null)
+        $("#name").val(null);
+        $('input[type="password"]').val(null)
     });
 
     $("#Table").click(function(){
-    	$("#div_login").hide();
+        $("#div_login").hide();
         $("#app").show();
     });
     $("#Plot").click(function(){
-        $("#div_login").hide();
+        $("#viz").hide();
         $("#app").show();
     });
 
