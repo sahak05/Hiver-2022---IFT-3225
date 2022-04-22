@@ -2,27 +2,14 @@
 function readProductsTemplate(data, keywords){
  
     var read_products_html="";
- 
-    // search products form
-    read_products_html+="<form id='search-brasseries-form' action='#' method='post'>";
-    read_products_html+="<div class='input-group pull-left w-30-pct'>";
-    
-    read_products_html+="<input type='text' value=\"" + keywords + "\" name='keywords' class='form-control product-search-keywords' placeholder='Search name brasseries like...' />";
- 
-    read_products_html+="<span class='input-group-btn'>";
-    read_products_html+="<button type='submit' class='btn btn-default' type='button'>";
-    read_products_html+="<span class='glyphicon glyphicon-search'></span>";
-    read_products_html+="</button>";
-    read_products_html+="</span>";
-    
-    read_products_html+="</div>";
-    read_products_html+="</form>";
     
     // when clicked, it will load the create product form
     read_products_html+="<div id='create-product' class='btn btn-primary pull-right m-b-15px create-product-button'>";
-    read_products_html+="<span class='glyphicon glyphicon-plus'></span> Create Brasserie";
+    read_products_html+="<span class='glyphicon glyphicon-plus'>Créez votre Brasserie</span> ";
+
     read_products_html+="</div>";
-    
+    read_products_html+="<br>"
+    read_products_html+="<br>"
     // start table
     read_products_html+="<table class='table table-bordered table-hover table table-striped'>";
     
