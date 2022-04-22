@@ -65,7 +65,7 @@ function scatterplot(){
            // otherwise too many data to output (too many overlaps of texts)
            data.splice(50);
 
-           console.log(data);
+    
 
            var x = d3.scaleLinear()
                         .domain(d3.extent(data, d => d.x)).nice()

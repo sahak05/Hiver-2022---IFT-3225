@@ -6,7 +6,7 @@ $(document).ready(function(){
         document.getElementById("viz").innerHTML = ""; 
         $("#app").show();
         
-
+            $("#doc_id").hide();
         if(sessionStorage.getItem('droits')){
             showBrasseries();
         }

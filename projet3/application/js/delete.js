@@ -2,11 +2,11 @@ $(document).ready(function(){
  
     // will run if the delete button was clicked
     $(document).on('click', '.delete-product-button', function(){
-    	console.log("ICI")
+    	
 		// get the product id
 
 		var nom = $(this).attr('data-nom');
-		console.log(nom+"  ", sessionStorage.getItem('droits')=== 'MODIFY');
+		
 		
 		if(sessionStorage.getItem('droits')=== 'MODIFY'){
 			// delete request will be here

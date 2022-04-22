@@ -96,8 +96,44 @@
 
 
 
-      <div class="row justify-content-center">
-        <p></p>
+      <div id="doc_id" class="row justify-content-center" style="display: none;">
+        <h2>But du service REST derriere ce projet</h2><br>
+        <p>Notre projet permet de fournir sur la base de donnees sadikoua_projet_3 qui cintient les informations sur les Microbrasseries du Quebec, base de donnees arbritee sur le serveur du Diro a l'universite de Montreal. Une partie de notre code a ete inspiree des notes de cours. Ainsi, notre site web en premier propose un cote client qui grace apres votre authentification (user normal ou admin) vous permet d'avoir un apercu de toutes les donnees dans notre base, d'avoir un apercu de la ocalisation sur un graphe D3 des emplacements des microbrasseries, l'acces a la documentation. L'acces aux nom des auteurs est l'acces a l'acces libre. Pour vous connectez en user normal, veuillez utiliser ift3225 et sesame (e accent aigu). </p><br>
+        <h2> Differentes requetes sur le service REST </h2>
+        <div>
+          <p><b>GET https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/getpermis.php?permis=[valeur_permis]</b></p>
+          <p>Cette requete prend le numero de permis d'une microbrasseries et retourne dans un json les informations de la microbrasserie.</p>
+        </div>
+
+        <div>
+          <p><b>GET https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/read.php</b></p>
+          <p>Cette requete retourne un json contenant toutes les microbasseires suivies de leurs informations a chacunes.</p>
+        </div>
+
+        <div>
+          <p><b>GET https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/read_allnames.php</b></p>
+          <p>Cette requete retourne un tableau contenant les noms des microbrasseries</p>
+        </div>
+
+        <div>
+          <p><b>GET https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/readLike.php?prefix=[valeur_prefix]</b></p>
+          <p>Cette requete en prenant un prefix et retourne sous forme json tous les noms des brasseries commencant par ce prefixe</p>
+        </div>
+
+        <div>
+          <p><b>GET https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/names/readLike</b></p>
+          <p>Cette requete retourne un json contenant tous les noms dans la table Brasseries</p>
+        </div>
+
+        <div>
+          <p><b>POST https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/addJ.php</b></p>
+          <p>Cette requete prend en parametre un objet json et ajoute ce fichier json qui permet de creer une nouvelle brasserie dans la dite table.</p>
+        </div>
+
+        <div>
+          <p><b>POST https://www-ens.iro.umontreal.ca/~sadikoua/skdffivndfk/pj3/api/delete.php?input=[nom_brass]</b></p>
+          <p>Cette requete prend le nom de la brasserie a supprimer en remplacant les espaces par <em>_</em> et supprime cette microbrasserie de la table.</p>
+        </div>
       </div>
 
       <!-- our app will be injected here -->
@@ -116,8 +152,8 @@
       <!-- app js script -->
       <script src="js/app.js"></script>
       <script src="js/login.js"></script>
-      <!--<script src="js/plot.js"></script>-->
-      <!--<script src="js/auteurs.js"></script>-->
+      <script src="js/plot.js"></script>
+      <script src="js/auteurs.js"></script>
 
 
 
